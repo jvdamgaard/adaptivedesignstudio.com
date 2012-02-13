@@ -1,0 +1,832 @@
+/* 	----------------------------------------------------------
+	style.less
+	by Adaptive Design Studio
+	v 1.0.0 */
+
+
+/* 	----------------------------------------------------------
+	SETTINGS */
+@import 'settings.less';
+
+
+/* 	----------------------------------------------------------
+	FRAMEWORK
+	by Jakob Viskum Damgaard at Adaptive Design Studio
+	including:
+		- CSS3 mixins
+		- Adaptive Grid System
+		- Reset
+		- ADS defualts */
+@import '../lib/style/import.less';
+
+
+/* 	----------------------------------------------------------
+	VARIABLES */
+
+
+
+/* 	----------------------------------------------------------
+	MIXINS */
+.sprite-position (@x,@y) {
+	background-repeat: no-repeat;
+	background-position: 0px-@x 0px-@y;
+}
+
+
+/* 	----------------------------------------------------------
+	MEDIA QUEREIES
+	mobile-first: lukew.com/ff/entry.asp?933
+	responsive design: alistapart.com/articles/responsive-web-design */
+
+/* 	Mobile Tall
+	greater than 0px
+	4 cols */
+
+h1 { .h4; font-weight: 700;}
+h2 { .h4; }
+h3 { .h4; }
+h4 { .base; font-weight: 700; }
+.sprite {
+	background-image: url(../img/sprite.min.png);
+}
+.sprite-headers {
+	background-image: url(../img/sprite-headers-small.min.png);
+}
+.sprite-cases {
+	background-image: url(../img/sprite-cases-small.min.jpg);
+}
+.sprite-profiles {
+	background-image: url(../img/sprite-profiles-smaller.min.jpg);
+}
+.sprite-adaptive {
+	background-image: url(../img/sprite-mobile-tall.min.png);
+}
+.bordered {
+	border-top: solid @gutter*3/8 @color-font;
+	border-bottom: solid 1px @color-background-2;
+	padding: @gutter*5/8 0 @gutter - 1px 0;
+	margin-top: 2*@gutter;
+	margin-bottom: @gutter;
+	h2 {
+		.cols(4);
+		.gutters-height(1);
+		.icon {
+			display: block;
+			float: left;
+			margin-right: @gutter/2;
+			height: @gutter;
+			margin-top: -1px;
+			&.cases { .sprite-position(0,0); width: 30px }
+			&.work { .sprite-position(30,0); width: 16px }
+			&.about { .sprite-position(46,0); width: 26px }
+			&.contact { .sprite-position(72,0); width: 31px }
+		}
+	}
+}
+.highlighted {
+	background-color: @color-1;
+	color: @color-2;
+	font-weight: 700;
+}
+.btn {
+	.google-btn(@color,@color-background);
+	.gutters-height(2);
+	line-height: 2*@gutter;
+	.icon-btn {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: @gutter/4;
+		margin-top: -3px;
+		height: 16px;
+		&.get-started {
+			.sprite-position(45,192);
+			width: 22px;
+		}
+		&.load-more {
+			.sprite-position(67,192);
+			width: 17px;
+		}
+		&.email {
+			.sprite-position(0,192);
+			width: 21px;
+		}
+		&.linkedin {
+			.sprite-position(84,192);
+			width: 16px;
+		}
+		&.twitter {
+			.sprite-position(21,192);
+			width: 24px;
+		}
+	}
+}
+header {
+	margin-top: 0px !important;
+	#firm-description {
+		.cols(4);
+		margin-bottom: @gutter;
+		h1, p {
+			display: inline;
+			vertical-align: baseline;
+		}
+	}
+	a {
+		.cols;
+		.gutters-height(3);
+		.small;
+		line-height: @gutter;
+		font-weight: 700;
+		display: block;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: 0;
+		&:hover {
+			color: @color-2;
+			.text-shadow(0px,1px,1px,0px,rgba(0,0,0,0.2));
+			.icon {
+				&.cases { .sprite-position(56,0) }
+				&.work { .sprite-position(56,48) }
+				&.about { .sprite-position(56,96) }
+				&.contact { .sprite-position(56,144) }
+			}
+		}
+		.icon {
+			.cols-width;
+			.gutters-height(2);
+			&.cases { .sprite-position(0,0) }
+			&.work { .sprite-position(0,48) }
+			&.about { .sprite-position(0,96) }
+			&.contact { .sprite-position(0,144) }
+		}
+	}
+}
+#adaptive-design {
+	#adaptive-design-figure {
+		.cols(4);
+		.gutters-height(3);
+		.sprite-position(0,0);
+		margin-bottom: @gutter;
+	}
+	#adaptive-design-description {
+		.cols(4);
+	}
+	#get-started {
+		.cols(4);
+		margin-bottom: @gutter;
+	}
+}
+#cases {
+	.case {
+		.cols-outer(4);
+		.gutters-height(10);
+		margin-bottom: @gutter;
+		text-decoration: none;
+		line-height: 2*@gutter;
+		text-align: center;
+		figure {
+			.cols(4);
+			.gutters-height(8);
+			.rounded(2px);
+			border: @gutter/4 solid @color-font;
+			overflow: hidden;
+			.hover {
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				visibility: hidden; /* Old IE */
+				.transition();
+			}
+			&.psykologviskum-dk {
+				.sprite-position(0,0);
+				.hover {
+					.sprite-position(296,0);
+				}
+			}
+			&.metteomaibom-dk {
+				.sprite-position(0,192);
+				.hover {
+					.sprite-position(296,192);
+				}
+			}
+		}
+		&:hover {
+			color: @color-font;
+			figure {
+				.drop-shadow(0px, 1px, 2px, 0px, 0.2);
+				.hover {
+					opacity: 1;
+					visibility: visible; /* Old IE */
+					.transition();
+				}
+			}
+		}
+	}
+	#load-more {
+		.cols(4);
+		margin-bottom: @gutter;
+	}
+}
+#work {
+	h3, #adaptive-design-grid-figure, .text {
+		.cols(4);
+	}
+	.works {
+		margin-top: @gutter;
+		&:first-child {
+			margin-top: 0px;
+		}
+	}
+	#adaptive-design-grid-figure {
+		margin-top: @gutter;
+		margin-bottom: @gutter;
+		.gutters-height(6);
+		.sprite-position(0,72);			
+	}
+}
+#about {
+	.profile {
+		margin-top: @gutter;
+		&:first-child {
+			margin-top: 0px;
+		}
+		h3, h4, p {
+			.cols(4);
+		}
+		h4 {
+			margin-bottom: @gutter;
+		}
+		.portrait {
+			.cols(3);
+			.gutters-height(8);
+			&#jakob-viskum-damgaard {
+				.sprite-position(0,0);
+			}
+			&#lene-nannerup-kristensen {
+				.sprite-position(0,192);
+			}
+		}
+		.btn {
+			.cols(1);
+			margin-bottom: @gutter;
+			.icon-btn {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+#contact {
+	#tagline, #hire-us, #follow, #email, #location {
+		.cols(4);
+	}
+	#tagline h3 {
+		margin-bottom: @gutter;
+	}
+	#contact-get-started {
+		.cols-width(4);
+		margin-bottom: @gutter;
+	}
+	.box {
+		margin-top: @gutter;
+		&:first-child {
+			margin-top: 0px;
+		}
+	}
+}
+
+footer {
+	background: @color-font url(../img/seamlesspaper-dakr.jpg);
+	color: @color-background;
+	padding-top: @gutter;
+	margin-top: 2*@gutter;
+	a:hover {
+		color: @color-1;
+	}
+	.logo {
+		.cols(1);
+		.sprite-position(12,216);
+		height: 56px;
+	}
+	.text {
+		.cols(3);
+		.small;
+		padding-right: @gutter/2;
+	}
+}
+
+/* 	Mobile Wide
+	greater than 479px
+	6 cols */
+.gt-mobile-tall {
+	.sprite {
+		background-image: url(../img/sprite.min.png);
+	}
+	.sprite-headers {
+		background-image: url(../img/sprite-headers-small.min.png);
+	}
+	.sprite-cases {
+		background-image: url(../img/sprite-cases-small.min.jpg);
+	}
+	.sprite-profiles {
+		background-image: url(../img/sprite-profiles-smaller.min.jpg);
+	}
+	.sprite-adaptive {
+		background-image: url(../img/sprite-mobile-tall.min.png);
+	}
+	.bordered {	
+		h2 {
+			.cols(6);
+		}
+	}
+	header { 
+		h1, p {
+			.cols(6);
+		}			
+		nav {
+			.cols-outer(4);
+			.cols-outer-left(1);
+			.cols-outer-right(1);
+		}
+	}
+	#adaptive-design {
+		#adaptive-design-figure {
+			.cols(6);
+			.gutters-height(5);
+			.sprite-position(0,216);
+		}
+		#adaptive-design-description {
+			.cols(6);
+		}
+		#get-started {
+			.cols(6);
+		}
+	}
+	#cases {
+		.case {
+			.cols(3);
+			figure {
+				.cols-width(3);
+			}
+			.psykologviskum-dk {
+				.sprite-position(0,504);
+			}
+			.metteomaibom-dk {
+				.sprite-position(216,504);
+			}
+		}
+		#load-more {
+			.cols(6);
+		}
+	}
+	#work {
+		h3, #adaptive-design-grid-figure, .text {
+			.cols(6);
+		}
+		#adaptive-design-grid-figure {
+			.sprite-position(0,336);			
+		}
+	}
+	#about {
+		.profile {
+			h3, h4, p {
+				.cols(6);
+			}
+			.portrait {
+				.cols(4);
+				&#jakob-viskum-damgaard {
+					.sprite-position(0,672);
+				}
+				&#lene-nannerup-kristensen {
+					.sprite-position(0,864);
+				}
+			}
+			.btn {
+				.cols(2);
+			}
+		}
+	}
+	#contact {
+		#tagline, #hire-us, #follow, #email, #location {
+			.cols(6);
+		}
+		#contact-get-started {
+			.cols-width(6);
+		}
+	}	
+	footer {
+		.logo {
+			.cols(2);
+			.sprite-position(320,0);
+			height: 136px;
+		}
+		.text {
+			.cols(4);
+		}
+	}
+}
+	
+/* 	Tablet Tall
+	greater than 719px
+	9 cols */
+.gt-mobile-wide {
+	.sprite {
+		background-image: url(../img/sprite-tablet-tall.min.png);
+	}
+	h1 { .h3; text-transform: uppercase; font-weight: 700;}
+	.bordered {
+		margin-bottom: 2*@gutter;
+		margin-top: 3*@gutter;
+		h2 {
+			.cols(9);
+		}
+	}
+	header { 
+		#firm-description {
+			.cols-outer(5);
+		}
+		h1, p {
+			.cols(5);
+			text-align: left;
+		}
+		h1 {
+			#logo {
+				height: 16px;
+				width: 16px;
+				margin-bottom: 1px;
+			}
+		}
+		nav {
+			.cols-outer-left(0);
+			.cols-outer-right(0);
+		}
+	}
+	#adaptive-design {
+		#adaptive-design-figure {
+			.cols(5);
+			.gutters-height(4);
+			.sprite-position(0,216);
+		}
+		#adaptive-design-description {
+			.cols(4);
+		}
+		#get-started {
+			.cols(4);
+			.cols-left(5);
+		}
+	}
+	#cases {
+		.case {
+			.cols(4);
+			figure {
+				.cols-width(4);
+			}
+			.psykologviskum-dk {
+				.sprite-position(0,336);
+			}
+			.metteomaibom-dk {
+				.sprite-position(0,504);
+			}
+		}
+		#load-more {
+			.cols(4);
+			.cols-left(5);
+			margin-top: @gutter;
+		}
+	}
+	#work {
+		#adaptive-design-grid-figure {
+			.cols(4);
+			.gutters-height(14);
+			margin-top: 0;
+			.sprite-position(0,672);
+		}
+		h3, .text {
+			.cols(5);
+			float: right;
+		}
+	}
+	#about {
+		.profile {
+			.cols-outer(4);
+			h3, h4, p {
+				.cols(4);
+			}
+			.portrait {
+				.cols(3);
+				&#jakob-viskum-damgaard {
+					.sprite-position(0,1152);
+				}
+				&#lene-nannerup-kristensen {
+					.sprite-position(216,1152);
+				}
+			}
+			.btn {
+				.cols(1);
+			}
+		}
+	}
+	#contact {
+		#tagline {
+			.cols(9);
+		}
+		#hire-us, #follow, #email, #location {
+			.cols(4);
+		}
+		#follow, #email, #location {
+			float: right;
+			.cols-left(1);
+		}
+		#contact-get-started {
+			.cols-width(4);
+		}
+	}	
+	footer {
+		.logo {
+			.cols(4);
+			.sprite-position(0,1008);
+			margin-top: -@gutter;
+			height: 144px;
+		}
+		.text {
+			.cols(5);
+		}
+	}
+}
+.is-tablet-tall {
+	#cases {
+		.case {
+			&:nth-child(odd) {
+				.cols-left(1);
+			}
+		}
+	}	
+	#about {
+		.profile {
+			&:nth-child(odd) {
+				.cols-outer-left(1);
+			}
+		}
+	}
+}
+	
+/* 	Tablet Wide
+	greater than 959px
+	12 cols */
+.gt-tablet-tall {
+	.sprite {
+		background-image: url(../img/sprite-tablet-wide.png);
+	}
+	.set-base-sizes(0);
+	h1 {.h2; font-weight: 700;}
+	.bordered {
+		margin-top: 4*@gutter;
+		padding: @gutter*7/4 0 2*@gutter - 1px 0;
+		h2 {
+			.cols(12);
+			.gutters-height(2);
+			.icon {
+				height: 2*@gutter;
+				&.cases { .sprite-position(232,0); width: 59px }
+				&.work { .sprite-position(195,0); width: 32px }
+				&.about { .sprite-position(297,0); width: 52px }
+				&.contact { .sprite-position(354,0); width: 62px }
+			}
+		}
+	}
+	header { 
+		#firm-description {
+			.cols-outer(8);
+		}
+		h1, p {
+			.cols(8);
+		}
+		h1 {
+			#logo {
+				height: 21px;
+				width: 21px;
+			}
+		}
+		p {
+			.h4;
+			margin-bottom: 0;
+		}
+	}
+	#adaptive-design {
+		#adaptive-design-figure {
+			.cols(8);
+			.gutters-height(7);
+			.sprite-position(0,205);
+		}
+		#adaptive-design-description, #get-started {
+			.cols(4);
+			float: right;
+		}
+	}
+	#cases {
+		.case {
+			.cols(4);
+			.psykologviskum-dk {
+				.sprite-position(0,377);
+			}
+			.metteomaibom-dk {
+				.sprite-position(296,377);
+			}
+		}
+		#load-more {
+			.cols-left(8);
+		}
+	}
+	#work {
+		#adaptive-design-grid-figure {
+			.cols(5);
+			.gutters-height(9);
+			margin-top: 2*@gutter;
+			.sprite-position(0,545);
+		}
+		h3, .text {
+			.cols(7);
+			float: right;
+		}
+	}
+	#about {
+		.profile {
+			.cols-outer(6);
+			h3, h4, p {
+				.cols(6);
+			}
+			.portrait {
+				.cols(6);
+				.gutters-height(14);
+				margin-bottom: @gutter;
+				&#jakob-viskum-damgaard {
+					.sprite-position(0,761);
+				}
+				&#lene-nannerup-kristensen {
+					.sprite-position(0,1096);
+				}
+			}
+			.btn {
+				.cols(1);
+			}
+		}
+	}
+	#contact {
+		#tagline {
+			.cols(12);
+		}
+		#hire-us {
+			#contact-get-started {
+				.cols-width(3);
+			}
+		}
+		#hire-us, #follow, #email, #location {
+			.cols(3);
+		}
+	}	
+	footer {
+		padding-top: 2*@gutter;
+		padding-bottom: @gutter;
+		.logo {
+			.cols(4);
+			.cols-left(1);
+			.cols-right(1);
+			.gutters-height(8);
+			.sprite-position(0,1432);
+			margin-top: -2*@gutter;
+			margin-bottom: -@gutter;
+		}
+		.text {
+			.cols(5);
+			.cols-right(1);
+		}
+	}
+}
+	
+/* 	Screen
+	greater than 1119px
+	14 cols */
+.gt-tablet-wide {
+	.sprite {
+		background-image: url(../img/sprite-screen.png);
+	}
+	h1 {.h1; font-weight: 700;}
+	header { 
+		#firm-description {
+			.cols-outer(10);
+		}
+		h1, p {
+			.cols(10);
+		}
+		h1 {
+			#logo {
+				height: 27px;
+				width: 27px;
+			}
+		}
+	}
+	#adaptive-design {
+		#adaptive-design-figure {
+			.cols(10);
+			.sprite-position(0,205);
+		}
+	}
+	#cases {
+		.case {
+			.cols-left(1);
+			&:nth-child(3n-1) {
+				.cols-left(0);
+			}
+			.psykologviskum-dk {
+				.sprite-position(0,377);
+			}
+			.metteomaibom-dk {
+				.sprite-position(296,377);
+			}
+		}
+		#load-more {
+			.cols-left(8);
+		}
+	}
+	#work {
+		#adaptive-design-grid-figure {
+			.cols(5);
+			.gutters-height(9);
+			margin-top: 2*@gutter;
+			.sprite-position(0,545);
+		}
+		h3, .text {
+			.cols(7);
+			float: right;
+		}
+	}
+	#about {
+		.profile {
+			.cols-outer(6);
+			&:nth-child(odd) {
+				.cols-outer-left(0);
+			}
+			h3, h4, p {
+				.cols(6);
+			}
+			.portrait {
+				.cols(6);
+				.gutters-height(14);
+				margin-bottom: @gutter;
+				&#jakob-viskum-damgaard {
+					.sprite-position(0,761);
+				}
+				&#lene-nannerup-kristensen {
+					.sprite-position(0,1096);
+				}
+			}
+			.btn {
+				.cols(1);
+			}
+		}
+	}
+	#contact {
+		#tagline {
+			.cols(12);
+		}
+		#hire-us {
+			#contact-get-started {
+				.cols-width(3);
+			}
+		}
+		#hire-us, #follow, #email, #location {
+			.cols(3);
+		}
+	}	
+	footer {
+		padding-top: 2*@gutter;
+		padding-bottom: @gutter;
+		.logo {
+			.cols(4);
+			.cols-left(1);
+			.cols-right(1);
+			.gutters-height(8);
+			.sprite-position(0,1432);
+			margin-top: -2*@gutter;
+			margin-bottom: -@gutter;
+		}
+		.text {
+			.cols(5);
+			.cols-right(1);
+		}
+	}
+}
+.is-screen {
+	#cases {
+		.case {
+			&:nth-child(3n-1) {
+				.cols-left(0);
+			}
+		}
+	}
+}
+	
+/* 	Screen Wide
+	greater than 1839px
+	23 cols */
+.gt-screen {
+}

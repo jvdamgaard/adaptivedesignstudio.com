@@ -1,0 +1,131 @@
+/*
+	Defaults by Jakob Viskum Damgaard
+	version 1.0.0
+	
+-------------------------------------------------------------------------------*/
+
+
+/*
+	TYPEKIT
+	Following shows loading image when typekit fonts are loaded asynchronous
+-------------------------------------------------------------------------------*/
+
+/* 	Show loading image when typekit loading
+	Loading GIFs: ajaxload.info
+	Base64: opinionatedgeek.com/dotnet/tools/base64encode */
+&.wf-loading body {
+	background: url(data:image/gif;base64,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) center center no-repeat; 
+	.wrapper { opacity: 0; }
+}
+&.wf-loading.ie body { 
+	.wrapper { visibility: hidden; } /* Old IE */
+}
+/* Displays loading image in midle of browser */
+&.wf-loading body, .wf-loading html {
+	height: 100%;
+}
+
+/* Fade in all elemnent when loading of fonts has finished */
+.wrapper {
+	opacity: 1;
+	visibility: visible; /* Old IE */
+	-webkit-transition: opacity 0.5s ease-in-out;
+	   -moz-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+}
+
+
+/*
+	RESETS
+-------------------------------------------------------------------------------*/
+
+body, html {
+	height: 100%;
+	min-height: 100%;
+}
+
+/* Include padding and border in width and height */
+* { 
+	   -moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	        box-sizing: border-box;
+}
+
+
+/*
+	MODERNIZR
+-------------------------------------------------------------------------------*/
+.svg .png-fallback { display: none }
+.no-svg .svg-image { display: none }
+
+
+/*
+	FONT-SIZES
+-------------------------------------------------------------------------------*/
+
+/* 	Setting font size classes
+	Multipli by sqr to golden ration (1.681) */
+.h1 (@larger:0) { /* 41.9 */
+	.font-header;
+	font-size: (@base-size+@larger)*2.618;
+	line-height: @gutter*ceil((@base-size+@larger)*2.618/@gutter);
+	vertical-align: middle;
+} 
+.h2 (@larger:0) { /* 32.9 */
+	.font-header;
+	font-size: (@base-size+@larger)*2.058; 	
+	line-height: @gutter*ceil((@base-size+@larger)*2.058/@gutter);
+	vertical-align: middle;
+}
+.h3 (@larger:0) { /* 25.9 */
+	.font-header; 	
+	font-size: (@base-size+@larger)*1.681; 	
+	line-height: @gutter*ceil((@base-size+@larger)*1.681/@gutter);
+	vertical-align: middle;
+}
+.h4 (@larger:0) { /* 20.4 */ 	
+	.font-header; 	
+	font-size: (@base-size+@larger)*1.272; 
+	line-height: @gutter*ceil((@base-size+@larger)*1.272/@gutter);
+	vertical-align: middle;
+}
+.base (@larger:0) { /* 16.0 */
+	.font-body; 	
+	font-size: (@base-size+@larger);
+	line-height: @gutter*ceil((@base-size+@larger)/@gutter);
+	vertical-align: middle;
+}
+.small (@larger:0) {  /* 12.6 */		   		
+	font-size: (@base-size+@larger)/1.272; 	
+	line-height: @gutter*ceil((@base-size+@larger)/1.272/@gutter);
+	vertical-align: middle;
+}
+
+/* Setting default heading sizes */
+.set-base-sizes (@larger:0) {
+	body, select, textarea, input { .base(@larger); }
+	p, ul, ol { margin-bottom: @gutter; }
+	small { .small(@larger); }
+	/* Size depending on device */
+	h1 { .h1(@larger); }
+	h2 { .h2(@larger); }
+	h3 { .h3(@larger); }
+	h4 { .h4(@larger); }
+}
+.set-base-sizes(0);
+
+
+/*
+	COLORS
+-------------------------------------------------------------------------------*/
+
+/* Base colors for document */
+body { color: @color-font; background: @color-background; }
+
+/* Make links the same color as its containers font */
+a { color: inherit; text-decoration: underline; }
+a:hover { color: @color; }
+
+/* Color for marking text */
+::-moz-selection { background: @color; color: @color-background; text-shadow: none; }
+     ::selection { background: @color; color: @color-background; text-shadow: none; }
