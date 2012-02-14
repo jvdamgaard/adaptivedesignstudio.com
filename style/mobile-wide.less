@@ -1,0 +1,116 @@
+/* 	Mobile Wide
+	greater than 479px
+	6 cols */
+
+/* Styles for mobile wide and above */	
+.gt-mobile-tall {
+	.sprite {
+		background-image: url(../img/sprite.min.png);
+	}
+	.sprite-headers {
+		background-image: url(../img/sprite-headers-small.min.png);
+	}
+	.sprite-cases {
+		background-image: url(../img/sprite-cases-small.min.jpg);
+	}
+	.sprite-profiles {
+		background-image: url(../img/sprite-profiles-smaller.min.jpg);
+	}
+	.sprite-adaptive {
+		background-image: url(../img/sprite-mobile-tall.min.png);
+	}
+	.bordered {	
+		h2 {
+			.cols(6);
+		}
+	}
+	header { 
+		h1, p {
+			.cols(6);
+		}			
+		nav {
+			.cols-outer(4);
+			.cols-outer-left(1);
+			.cols-outer-right(1);
+		}
+	}
+	#adaptive-design {
+		#adaptive-design-figure {
+			.cols(6);
+			.gutters-height(5);
+			.sprite-position(0,216);
+		}
+		#adaptive-design-description {
+			.cols(6);
+		}
+		#get-started {
+			.cols(6);
+		}
+	}
+	#cases {
+		.case {
+			.cols(3);
+			figure {
+				.cols-width(3);
+			}
+			.psykologviskum-dk {
+				.sprite-position(0,504);
+			}
+			.metteomaibom-dk {
+				.sprite-position(216,504);
+			}
+		}
+		#load-more {
+			.cols(6);
+		}
+	}
+	#work {
+		h3, #adaptive-design-grid-figure, .text {
+			.cols(6);
+		}
+		#adaptive-design-grid-figure {
+			.sprite-position(0,336);			
+		}
+	}
+	#about {
+		.profile {
+			h3, h4, p {
+				.cols(6);
+			}
+			.portrait {
+				.cols(4);
+				&#jakob-viskum-damgaard {
+					.sprite-position(0,672);
+				}
+				&#lene-nannerup-kristensen {
+					.sprite-position(0,864);
+				}
+			}
+			.btn {
+				.cols(2);
+			}
+		}
+	}
+	#contact {
+		#tagline, #hire-us, #follow, #email, #location {
+			.cols(6);
+		}
+		#contact-get-started {
+			.cols-width(6);
+		}
+	}	
+	footer {
+		.logo {
+			.cols(2);
+			.sprite-position(320,0);
+			height: 136px;
+		}
+		.text {
+			.cols(4);
+		}
+	}
+}
+
+/* Specific for mobile wide */
+.is-mobile-wide {
+}

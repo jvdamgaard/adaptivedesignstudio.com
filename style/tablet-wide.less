@@ -1,0 +1,138 @@
+/* 	Tablet Wide
+	greater than 959px
+	12 cols */
+
+/* Styles for tablet wide and above */
+.gt-tablet-tall {
+	.sprite {
+		background-image: url(../img/sprite-tablet-wide.png);
+	}
+	.set-base-sizes(0);
+	h1 {.h2; font-weight: 700;}
+	.bordered {
+		margin-top: 4*@gutter;
+		padding: @gutter*7/4 0 2*@gutter - 1px 0;
+		h2 {
+			.cols(12);
+			.gutters-height(2);
+			.icon {
+				height: 2*@gutter;
+				&.cases { .sprite-position(232,0); width: 59px }
+				&.work { .sprite-position(195,0); width: 32px }
+				&.about { .sprite-position(297,0); width: 52px }
+				&.contact { .sprite-position(354,0); width: 62px }
+			}
+		}
+	}
+	header { 
+		#firm-description {
+			.cols-outer(8);
+		}
+		h1, p {
+			.cols(8);
+		}
+		h1 {
+			#logo {
+				height: 21px;
+				width: 21px;
+			}
+		}
+		p {
+			.h4;
+			margin-bottom: 0;
+		}
+	}
+	#adaptive-design {
+		#adaptive-design-figure {
+			.cols(8);
+			.gutters-height(7);
+			.sprite-position(0,205);
+		}
+		#adaptive-design-description, #get-started {
+			.cols(4);
+			float: right;
+		}
+	}
+	#cases {
+		.case {
+			.cols(4);
+			.psykologviskum-dk {
+				.sprite-position(0,377);
+			}
+			.metteomaibom-dk {
+				.sprite-position(296,377);
+			}
+		}
+		#load-more {
+			.cols-left(8);
+		}
+	}
+	#work {
+		#adaptive-design-grid-figure {
+			.cols(5);
+			.gutters-height(9);
+			margin-top: 2*@gutter;
+			.sprite-position(0,545);
+		}
+		h3, .text {
+			.cols(7);
+			float: right;
+		}
+	}
+	#about {
+		.profile {
+			.cols-outer(6);
+			h3, h4, p {
+				.cols(6);
+			}
+			.portrait {
+				.cols(6);
+				.gutters-height(14);
+				margin-bottom: @gutter;
+				&#jakob-viskum-damgaard {
+					.sprite-position(0,761);
+				}
+				&#lene-nannerup-kristensen {
+					.sprite-position(0,1096);
+				}
+			}
+			.btn {
+				.cols(1);
+			}
+		}
+	}
+	#contact {
+		#tagline {
+			.cols(12);
+		}
+		#hire-us {
+			#contact-get-started {
+				.cols-width(3);
+			}
+		}
+		#hire-us, #follow, #email, #location {
+			.cols(3);
+		}
+	}	
+	footer {
+		padding-top: 2*@gutter;
+		padding-bottom: @gutter;
+		.logo {
+			.cols(4);
+			.cols-left(1);
+			.cols-right(1);
+			.gutters-height(8);
+			.sprite-position(0,1432);
+			margin-top: -2*@gutter;
+			margin-bottom: -@gutter;
+		}
+		.text {
+			.cols(5);
+			.cols-right(1);
+		}
+	}
+}
+
+/* Specific for tablet wide */
+.is-mobile-wide {
+}
