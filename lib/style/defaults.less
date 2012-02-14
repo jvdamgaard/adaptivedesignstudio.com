@@ -90,7 +90,7 @@ body, html {
 }
 .base (@larger:0) {
 	.font-body; 	
-	font-size: round((@base-size+@larger); /* 16px @ 16 */
+	font-size: round(@base-size+@larger); /* 16px @ 16 */
 	line-height: @gutter*ceil((@base-size+@larger)/@gutter); /* 24px @ 24 */
 	vertical-align: middle;
 }
