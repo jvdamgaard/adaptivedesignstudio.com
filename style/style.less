@@ -1,5 +1,46 @@
-/* 	Screen Wide
-	greater than 1839px
-	23 cols */
-.gt-screen {
+/* 	----------------------------------------------------------
+	style.less
+	by Adaptive Design Studio
+	v 1.0.0 */
+
+
+/* 	----------------------------------------------------------
+	SETTINGS */
+@import 'settings.less';
+
+
+/* 	----------------------------------------------------------
+	FRAMEWORK
+	by Jakob Viskum Damgaard at Adaptive Design Studio
+	including:
+		- CSS3 mixins
+		- Adaptive Grid System
+		- Reset
+		- ADS defualts */
+@import '../lib/style/import.less';
+
+
+/* 	----------------------------------------------------------
+	VARIABLES */
+
+
+
+/* 	----------------------------------------------------------
+	MIXINS */
+.sprite-position (@x,@y) {
+	background-repeat: no-repeat;
+	background-position: 0px-@x 0px-@y;
 }
+
+
+/* 	----------------------------------------------------------
+	MEDIA QUEREIES
+	mobile-first: lukew.com/ff/entry.asp?933
+	responsive design: alistapart.com/articles/responsive-web-design */
+
+@import 'mobile-tall.less';
+@import 'mobile-wide.less';
+@import 'tablet-tall.less';
+@import 'tablet-wide.less';
+@import 'screen.less';
+@import 'screen-wide.less';
