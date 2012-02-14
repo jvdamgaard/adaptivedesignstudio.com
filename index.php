@@ -73,24 +73,24 @@ to the users need.">
         <div class="clearfix"></div>
     </div>
     <div class="profile">
-    	<h3>Jakob Viskum Damgaard</h3>
-        <h4>Founder and Chief Web Designer</h4>
-        <figure id="jakob-viskum-damgaard" class="portrait sprite-profiles"></figure>
-        <a href="https://twitter.com/#!/jvdamgaard" target="_blank" class="btn twitter" title="@jvdamgaard"><figure class="icon-btn twitter sprite"></figure></a>
-        <a href="http://linkedin.com" target="_blank" class="btn linkedin" title="jakob.dam"><figure class="icon-btn linkedin sprite"></figure></a>
-        <a href="mailto:jvd@adaptivedesignstudio.com" class="btn email" title="jvd@adaptivedesignstudio.com"><figure class="icon-btn email sprite"></figure></a>
+    	<h3>Our story</h3>
+        <h4>Where it all started</h4>
+        <figure id="about-adaptive-design-studio" class="portrait sprite-adaptive"></figure>
+        <a href="https://twitter.com/#!/adaptivedesignstudio" target="_blank" class="btn twitter" title="@adaptivedesignstudio"><figure class="icon-btn twitter sprite"></figure></a>
+        <a href="http://linkedin.com" target="_blank" class="btn linkedin" title="Adaptive Design Studio @ LinkedIn"><figure class="icon-btn linkedin sprite"></figure></a>
+        <a href="mailto:info@adaptivedesignstudio.com" class="btn email" title="info@adaptivedesignstudio.com"><figure class="icon-btn email sprite"></figure></a>
         <p><span class="highlighted">Pellentesque in turpis pharetra</span> mauris fermentum pharetra. Proin sollicitudin congue purus. Nunc in vestibulum elit.</p>
         <p>Etiam dapibus ornare diam, ac suscipit tortor consequat eleifend. Pellentesque rutrum consectetur nisl nec iaculis.</p>
         <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris semper ipsum id magna molestie eu euismod ipsum porttitor.</p>
     	<div class="clearfix"></div>
     </div>
     <div class="profile">
-    	<h3>Lene Nannerup Kristensen</h3>
-        <h4>Art Director and UX Expert</h4>
-        <figure id="lene-nannerup-kristensen" class="portrait sprite-profiles"></figure>
+    	<h3>Jakob Viskum Damgaard</h3>
+        <h4>Founder, designer and developer</h4>
+        <figure id="jakob-viskum-damgaard" class="portrait sprite-profiles"></figure>
         <a href="https://twitter.com/#!/jvdamgaard" target="_blank" class="btn twitter" title="@jvdamgaard"><figure class="icon-btn twitter sprite"></figure></a>
-        <a href="http://linkedin.com" target="_blank" class="btn linkedin" title="jakob.dam"><figure class="icon-btn linkedin sprite"></figure></a>
-        <a href="mailto:jvd@adaptivedesignstudio.com" class="btn email" title="jvd@adaptivedesignstudio.com"><figure class="icon-btn email sprite"></figure></a>
+        <a href="http://www.linkedin.com/profile/view?id=165828189" target="_blank" class="btn linkedin" title="Jakob Viskum Damgaard @ LinkedIn"><figure class="icon-btn linkedin sprite"></figure></a>
+        <a href="mailto:jakob@adaptivedesignstudio.com" class="btn email" title="jakob@adaptivedesignstudio.com"><figure class="icon-btn email sprite"></figure></a>
         <p><span class="highlighted">Curabitur quis</span> ultrices sem. Nam at felis sit amet ante volutpat molestie in vehicula purus. Nullam nec orci dui, et bibendum mi. Donec ut porta quam. Mauris tempor nunc vel lectus placerat scelerisque ut eu felis.</p>
         <p>Vivamus in orci nulla, vitae bibendum mauris. Phasellus sollicitudin neque at massa ornare eget pellentesque elit porta. Suspendisse aliquam, ante quis adipiscing tincidunt, sem quam volutpat massa, at ullamcorper est massa sed ante.</p>
     	<div class="clearfix"></div>
