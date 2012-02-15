@@ -4,47 +4,47 @@
 	
 -------------------------------------------------------------------------------*/
 
-.cols (@cols:1) {
+.cols(@cols:1) {
 	width: @cols * ( @column + @gutter ) - @gutter;
 	float: left;
 	margin-left: @gutter / 2;
 	margin-right: @gutter / 2;
 }
-.cols-left (@cols:1) {
+.cols-left(@cols:1) {
 	margin-left: @gutter / 2 + @cols * ( @column + @gutter );
 }
-.cols-right (@cols:1) {
+.cols-right(@cols:1) {
 	margin-right: @gutter / 2 + @cols * ( @column + @gutter );
 }
-.cols-width (@cols:1) {
+.cols-width(@cols:1) {
 	width: @cols * ( @column + @gutter ) - @gutter;
 }
 
-.cols-outer (@cols:1) {
+.cols-outer(@cols:1) {
 	width: @cols * ( @column + @gutter );
 	float: left;
 }
-.cols-outer-left (@cols:1) {
+.cols-outer-left(@cols:1) {
 	margin-left: @cols * ( @column + @gutter );
 }
-.cols-outer-right (@cols:1) {
+.cols-outer-right(@cols:1) {
 	margin-right: @cols * ( @column + @gutter );
 }
-.cols-outer-width (@cols:1) {
+.cols-outer-width(@cols:1) {
 	width: @cols * ( @column + @gutter );
 }
 
-.gutters-height (@gutters:1) {
+.gutters-height(@gutters:1) {
 	height: @gutters * @gutter ;
 }
 
-.cols-reset {
+.cols-reset() {
 	width: auto;
 	float: none;
 	margin: 0;
 }
 
-.dimension (@x, @y) {
+.dimension(@x, @y) {
 	.cols-width(@x);
 	.gutters-height(@y);
 }
@@ -58,7 +58,7 @@
 .is-mobile-wide .wrapper { 	.cols-outer-width(6); }
 .is-tablet-tall .wrapper { 	.cols-outer-width(9); }
 .is-tablet-wide .wrapper { 	.cols-outer-width(12); }
-.is-screen .wrapper { 		.cols-outer-width(14); }
+.is-screen .wrapper 	 { 	.cols-outer-width(14); }
 .is-screen-wide .wrapper { 	.cols-outer-width(23); }
 
 /* Show grid: for development */

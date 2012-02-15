@@ -58,50 +58,50 @@ body, html {
 
 /* 	Setting font size classes
 	Multiply by sqr to golden ration (1.681) */
-.h0 (@larger:0) { 
+.h0(@larger:0) { 
 	.font-header;
 	font-size: round((@base-size+@larger)*3.330); /* 53px @ 16 */
 	line-height: @gutter*ceil((@base-size+@larger)*3.330/@gutter); /* 72px @ 24 */
 	vertical-align: middle;
 }
-.h1 (@larger:0) {
+.h1(@larger:0) {
 	.font-header;
 	font-size: round((@base-size+@larger)*2.618); /* 42px @ 16 */
 	line-height: @gutter*ceil((@base-size+@larger)*2.618/@gutter); /* 48px @ 24 */
 	vertical-align: middle;
 } 
-.h2 (@larger:0) {
+.h2(@larger:0) {
 	.font-header;
 	font-size: round((@base-size+@larger)*2.058);  /* 33px @ 16 */	
 	line-height: @gutter*ceil((@base-size+@larger)*2.058/@gutter); /* 48px @ 24 */
 	vertical-align: middle;
 }
-.h3 (@larger:0) {
+.h3(@larger:0) {
 	.font-header; 	
 	font-size: round((@base-size+@larger)*1.681); /* 26px @ 16 */
 	line-height: @gutter*ceil((@base-size+@larger)*1.681/@gutter); /* 48px @ 24 */
 	vertical-align: middle;
 }
-.h4 (@larger:0) {	
+.h4(@larger:0) {	
 	.font-header; 	
 	font-size: round((@base-size+@larger)*1.272);  /* 20px @ 16 */
 	line-height: @gutter*ceil((@base-size+@larger)*1.272/@gutter); /* 24px @ 24 */
 	vertical-align: middle;
 }
-.base (@larger:0) {
+.base(@larger:0) {
 	.font-body; 	
 	font-size: round(@base-size+@larger); /* 16px @ 16 */
 	line-height: @gutter*ceil((@base-size+@larger)/@gutter); /* 24px @ 24 */
 	vertical-align: middle;
 }
-.small (@larger:0) {		   		
+.small(@larger:0) {		   		
 	font-size: round((@base-size+@larger)/1.272);  /* 13px @ 16 */	
 	line-height: @gutter*ceil((@base-size+@larger)/1.272/@gutter); /* 524px @ 24 */
 	vertical-align: middle;
 }
 
 /* Setting default heading sizes */
-.set-base-sizes (@larger:0) {
+.set-base-sizes(@larger:0) {
 	body, select, textarea, input { .base(@larger); }
 	p, ul, ol { margin-bottom: @gutter; }
 	small { .small(@larger); }
