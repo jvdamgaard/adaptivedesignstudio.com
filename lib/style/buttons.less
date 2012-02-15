@@ -8,7 +8,9 @@
 /*
 	BUTTONS
 -------------------------------------------------------------------------------*/
-.google-btn(@background-color, @text-color) {
+
+// Google button
+.google-btn(@background-color: darken(@color-background,2%), @text-color: @color-font) {
 	display: block;
 	cursor: pointer;
 	text-align: center;
@@ -16,7 +18,7 @@
 	outline: 0;
 	color: @text-color;
 	border: 1px solid darken(@background-color,4%);
-	.rounded;
+	.rounded(2px);
 	.gradient(lighten(@background-color,2%), darken(@background-color,2%));
 	&:hover {
 		.gradient(darken(@background-color,0%), darken(@background-color,4%));
@@ -28,8 +30,86 @@
 	&:focus {
 		.inner-shadow(0px,0px,0px,1px,@color-background);
 	}
-	&:active {
+	&:active, &.active {
 		.inner-shadow(0px,1px,2px,0px,rgba(0,0,0,0.3);
+	}
+	&.disabled, &[disabled] {
+  		cursor: default;
+  		background-image: none;
+  		background-color: darken(@background-color, 10%);
+  		.opacity(0.65);
+  		.box-shadow(none);
+	}
+}
+
+// Google call to action button
+.google-cta-btn() {
+	.google-btn(@color,@color-background);
+}
+
+// Twitter bootstrap button
+.twitter-btn(@background: @color-background, @text: @color-font) {
+ 	display: block;
+  	color: @textt;
+  	text-align: center;
+	text-decoration: none;
+  	text-shadow: 0 1px 1px rgba(255,255,255,.75);
+  	.gradient-three-colors(@background, @background, 25%, darken(@background, 10%));
+  	border: 1px solid darken(@background, 12%);
+  	border-bottom-color: darken(@background, 14%);
+  	.rounded(4px);
+  	@shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  	.box-shadow(@shadow);
+  	cursor: pointer;
+	&:hover {
+  		color: @text;
+  		text-decoration: none;
+  		background-color: darken(@background, 10%);
+  		background-position: 0 -15px;
+  		.transition(background-position .1s linear);
+	}
+	&:focus {
+  		outline: thin dotted;
+  		outline: 5px auto -webkit-focus-ring-color;
+  		outline-offset: -2px;
+	}
+	&.active, &:active {
+  		background-image: none;
+  		@shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  		.box-shadow(@shadow);
+  		background-color: darken(@background, 10%);
+  		background-color: darken(@background, 15%) e("\9");
+  		color: rgba(0,0,0,.5);
+  		outline: 0;
+	}
+	&.disabled, &[disabled] {
+  		cursor: default;
+  		background-image: none;
+  		background-color: darken(@background, 10%);
+  		.opacity(0.65);
+  		.box-shadow(none);
+	}
+}
+
+// Twitter bootstrap call to action button
+.twitter-cta-btn() {
+	.twitter-btn;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  	color: @color-background;
+  	&.active {
+		color: rgba(255,255,255,.75);
+	}
+	@startColor: lighten(@color,10%);
+	@endColor: darken(@color, 10%);
+	.gradient(@startColor, @endColor);
+  	border-color: @endColor @endColor darken(@endColor, 15%);
+  	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) fadein(rgba(0,0,0,.1), 15%);
+	&:hover, &:active, &.active, &.disabled, &[disabled] {
+		background-color: @endColor;
+	}
+	&:active,
+	&.active {
+		background-color: darken(@endColor, 10%) e("\9");
 	}
 }
 	
