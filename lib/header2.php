@@ -3,8 +3,4 @@
     
 </head>
 
-<body data-responsejs='{
-    "create": [
-    { "breakpoints": [0,320,481,721,961,1121,1841], "mode": "src", "prefix": "src" }
-    ]}'
->
+<body>
