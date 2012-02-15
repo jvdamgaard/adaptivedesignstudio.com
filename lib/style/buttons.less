@@ -17,9 +17,9 @@
 	color: @text-color;
 	border: 1px solid darken(@background-color,4%);
 	.rounded;
-	.gradient(@background-color, lighten(@background-color,2%), darken(@background-color,2%));
+	.gradient(lighten(@background-color,2%), darken(@background-color,2%));
 	&:hover {
-		.gradient(darken(@background-color,2%), darken(@background-color,0%), darken(@background-color,4%));
+		.gradient(darken(@background-color,0%), darken(@background-color,4%));
 		.drop-shadow(0px, 1px, 2px, 0px, 0.2);
 		border: 1px solid darken(@background-color,15%);
 		text-decoration: none;
