@@ -3,38 +3,25 @@
 	by Adaptive Design Studio
 	v 1.0.0 */
 
+/* 	Settings for this site */
+@import 'settings';
 
-/* 	----------------------------------------------------------
-	SETTINGS */
-@import 'settings.less';
+/* 	Normalize, grid and mixins */
+@import '../lib/style/css3';
+@import '../lib/style/mixins';
+@import '../lib/style/normalize';
+@import '../lib/style/adaptive-grid-system';
+@import '../lib/style/defaults';
+@import '../lib/style/buttons';
+@import "../lib/style/helpers.less";
 
+/* 	Variables */
+@import 'variables';
 
-/* 	----------------------------------------------------------
-	FRAMEWORK
-	by Jakob Viskum Damgaard at Adaptive Design Studio
-	including:
-		- CSS3 mixins
-		- Adaptive Grid System
-		- Reset
-		- ADS defualts */
-@import '../lib/style/import.less';
+/* 	Mixins */
+@import 'mixins';
 
-
-/* 	----------------------------------------------------------
-	VARIABLES */
-
-
-
-/* 	----------------------------------------------------------
-	MIXINS */
-.sprite-position(@x,@y) {
-	background-repeat: no-repeat;
-	background-position: 0px-@x 0px-@y;
-}
-
-
-/* 	----------------------------------------------------------
-	MEDIA QUEREIES
+/* 	MEDIA QUEREIES
 	mobile-first: lukew.com/ff/entry.asp?933
 	responsive design: alistapart.com/articles/responsive-web-design */
 
@@ -44,3 +31,6 @@
 @import 'tablet-wide.less';
 @import 'screen.less';
 @import 'screen-wide.less';
+
+/* Print */
+@import "../lib/style/print.less";

@@ -20,7 +20,3 @@
 		// Set sizes and size names for use i CSS
 		syze.sizes(1, 320, 480, 720, 960, 1120, 1840).names({ 1:'-oldie', 320:'-mobile-tall', 480:'-mobile-wide', 720:'-tablet-tall', 960:'-tablet-wide', 1120:'-screen', 1840:'-screen-wide' });
 	</script>   
-    
-	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-	       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-	  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
