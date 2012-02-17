@@ -85,13 +85,7 @@
 	header {
 		margin-top: 0px !important;
 		#firm-description {
-			.cols(4);
-			.gutters-height(2);
 			margin-bottom: @gutter;
-			h1, p {
-				display: inline;
-				vertical-align: baseline;
-			}
 		}
 		a {
 			.cols;
@@ -280,4 +274,15 @@
 
 /* Specific for mobile tall */
 .is-mobile-tall {
+	header {
+		#firm-description {
+			.cols(4);
+			.gutters-height(2);
+			h1, p {
+				display: inline;
+				vertical-align: baseline;
+			}
+		}
+	}
+		
 }

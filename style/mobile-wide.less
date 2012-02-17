@@ -4,12 +4,6 @@
 
 /* Styles for mobile wide and above */	
 .gt-mobile-tall {
-	.sprite {
-		background-image: url(../img/sprite.min.png);
-	}
-	.sprite-headers {
-		background-image: url(../img/sprite-headers-small.min.png);
-	}
 	.sprite-cases {
 		background-image: url(../img/sprite-cases-small.min.jpg);
 	}
@@ -17,7 +11,7 @@
 		background-image: url(../img/sprite-profiles-smaller.min.jpg);
 	}
 	.sprite-adaptive {
-		background-image: url(../img/sprite-mobile-tall.min.png);
+		background-image: url(../img/sprite-mobile-wide.min.png);
 	}
 	.bordered {	
 		h2 {
@@ -27,6 +21,7 @@
 	header { 
 		h1, p {
 			.cols(6);
+			text-align: center;
 		}			
 		nav {
 			.cols-outer(4);
@@ -49,9 +44,9 @@
 	}
 	#cases {
 		.case {
-			.cols(3);
+			.cols-outer(3);
 			figure {
-				.cols-width(3);
+				.cols(3);
 			}
 			.psykologviskum-dk {
 				.sprite-position(0,504);
