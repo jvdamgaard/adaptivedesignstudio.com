@@ -1,9 +1,32 @@
-<?php include_once("lib/header.php"); ?>
-	<title>Adaptive Design Studio - Your site doesn't live on a desk anymore</title>
-	
-	<meta name="title" content="Adaptive Design Studio - Your site doesn't live on a desk anymore">
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	
+  	<title>Adaptive Design Studio - Your site doesn't live on a desk anymore</title>
 	<meta name="description" content="We specialize  in building websites that are just as brilliant for mobile as they are for the desktop. Contact us to learn how we can make your website adapt 
 to the users need.">
+	<meta name="author" content="Jakob Viskum Damgaard">
+	
+	<meta name="viewport" content="width=device-width">
+	
+	<link rel="shortcut icon" href="favicon.ico"> <!-- 32x32px; transparency is OK -->		 
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"> <!-- 48x48px; transparency not OK -->
+
+    <!-- Modernizr: enables HTML5 elements & feature detects -->
+    <script src="http://adaptivedesignstudio.com/lib/js/modernizr.min.js"></script>
+    
+    <!-- Uses LESS for for styling document.
+		 Documentation: lesscss.org -->
+    <link rel="stylesheet/less" type="text/css" href="style/style.less">
+    <script src="http://adaptivedesignstudio.com/lib/js/less.min.js"></script>
+	
 	
 	<meta name="google-site-verification" content="">
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
@@ -12,10 +35,14 @@ to the users need.">
 	<meta name="DC.title" content="Adaptive Design Studio">
 	<meta name="DC.subject" content="Design websites for all medias.">
 	<meta name="DC.creator" content="Jakob Viskum Damgaard from Adaptive Design Studio.">
-    
+
     <!-- Use Typekit for fonts -->
-    <script>TypekitConfig={kitId:"pdf1koa",scriptTimeout:3000};</script>
-<?php include_once("lib/header2.php"); ?>
+    <script>TypekitConfig={kitId:"pdf1koa",scriptTimeout:3000};(function(){var d=document.getElementsByTagName("html")[0];d.className+=" wf-loading";var b=setTimeout(function(){d.className=d.className.replace(/(\s|^)wf-loading(\s|$)/g,"");d.className+=" wf-inactive"},TypekitConfig.scriptTimeout);var a=document.createElement("script");a.src="//use.typekit.com/"+TypekitConfig.kitId+".js";a.type="text/javascript";a.async="true";a.onload=a.onreadystatechange=function(){var f=this.readyState;if(f&&f!="complete"&&f!="loaded"){return}clearTimeout(b);try{Typekit.load(TypekitConfig)}catch(g){}};var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c)})();</script>
+    
+</head>
+
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div class="wrapper">
 
 <header class="bordered">
@@ -142,21 +169,29 @@ to the users need.">
 
 </div>
 
-    <!-- Asynchronous google analytics; this is the official snippet.
-         Replace UA-XXXXXX-XX with your site's ID and uncomment to enable. -->
+	<!-- Async load:
+    	jQuery
+        Response
+        JVDamgaard
+        Custom functions -->
     <script>
-   		window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-    </script>
-
-<?php include_once("lib/footer.php"); ?>
-
-	<!-- Show grid
-    	 For development. Uncomment or delete in production -->
-    <script>
+    	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
         Modernizr.load({ load: [ 
-			"http://adaptivedesignstudio.com/lib/js/grid.min.js"
+			"http://adaptivedesignstudio.com/lib/js/jquery.min.js", 
+			"http://adaptivedesignstudio.com/lib/js/jvdamgaard.min.js", 
+			"js/functions.js",
+			"http://adaptivedesignstudio.com/lib/js/grid.min.js",
+			('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
 		] });
-	</script><!-- -->
+	</script>
+    
+    <!-- Responsive design powered by javascript
+    	 rezitech.github.com/syze -->
+	<script src="http://adaptivedesignstudio.com/lib/js/syze.min.js"></script>
+    <script>
+		// Set sizes and size names for use i CSS
+		syze.sizes(1, 320, 480, 720, 960, 1120, 1840).names({ 1:'-oldie', 320:'-mobile-tall', 480:'-mobile-wide', 720:'-tablet-tall', 960:'-tablet-wide', 1120:'-screen', 1840:'-screen-wide' });
+	</script>   
 	
 </body>
 
