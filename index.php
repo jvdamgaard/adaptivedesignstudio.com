@@ -17,15 +17,15 @@ to the users need.">
 	<link rel="shortcut icon" href="favicon.ico"> <!-- 32x32px; transparency is OK -->		 
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"> <!-- 48x48px; transparency not OK -->
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"> <!-- 48x48px; transparency not OK --> 
 
     <!-- Modernizr: enables HTML5 elements & feature detects -->
-    <script src="http://adaptivedesignstudio.com/lib/js/modernizr.min.js"></script>
+    <script src="lib/js/modernizr.min.js"></script>
     
     <!-- Uses LESS for for styling document.
 		 Documentation: lesscss.org -->
     <link rel="stylesheet/less" type="text/css" href="style/style.less">
-    <script src="http://adaptivedesignstudio.com/lib/js/less.min.js"></script>
+    <script src="lib/js/less.min.js"></script>
 	
 	
 	<meta name="google-site-verification" content="">
@@ -59,15 +59,22 @@ to the users need.">
     <div class="clearfix"></div>
 </header>
 <div id="adaptive-design">
-	<figure id="adaptive-design-figure" class="sprite-adaptive"></figure>
+	
+	<picture id="adaptive-design-figure">
+		<source src="img/adaptive-design-figure-4x3.png" />
+		<source src="img/adaptive-design-figure-6x5.png" media="min-width: 480px" />
+		<!-- Fallback content -->
+		<img src="img/adaptive-design-figure-4x3.png" />
+	</picture>
+	
     <p id="adaptive-design-description"><span class="highlighted">We specialize</span> in building websites that are just as brilliant for mobile as they are for the desktop. Contact us to learn how we can make your website adapt to the users need.</p>
-    <a href="#get-started" id="get-started" class="btn"><figure class="icon-btn get-started sprite"></figure>Get started</a>
+    <a href="#get-started" id="get-started" class="btn iconic bars_alt">Get started</a>
     <div class="clearfix"></div>
 </div>
 
 <article id="cases">
     <div class="bordered">
-        <h2><figure class="icon cases sprite-headers"></figure> Cases</h2>
+        <h2>Cases</h2>
         <div class="clearfix"></div>
     </div>
     <a href="http://psykologviskum.dk" target="_blank" class="case"><figure class="sprite-cases psykologviskum-dk"><div class="sprite-cases hover"></div></figure>Psykolog Birgitte Viskum</a>
@@ -84,7 +91,13 @@ to the users need.">
     </div>
     <div id="adaptive-design-grid" class="works">
     	<h3>Adaptive Design Grid</h3>
-        <figure id="adaptive-design-grid-figure" class="sprite-adaptive"></figure>
+		<picture id="adaptive-design-grid-figure">
+			<source src="img/adaptive-grid-system-mobile.png" />
+			<source src="img/adaptive-grid-system-mobile-wide.png" media="min-width: 480px" />
+			<!-- Fallback content -->
+			<img src="img/adaptive-grid-system-mobile.png" />
+		</picture>
+        <!--<figure id="adaptive-design-grid-figure" class="sprite-adaptive"></figure>-->
         <div class="text">
             <p><span class="highlighted">Lorem ipsum dolor sit</span>  amet, consectetur adipiscing elit. Sed eu orci eros, sed dapibus arcu. Nulla facilisi. Nulla in neque elit, non cursus eros. Duis feugiat diam quam, in sodales purus. Nullam justo justo, auctor et tincidunt ut, placerat nec turpis. Donec id tortor vel tortor aliquam interdum id ut nulla.</p>
             <p>Vestibulum sed facilisis nibh. Praesent consectetur diam non metus rutrum ac hendrerit leo cursus. Phasellus rutrum, orci sed tincidunt pharetra, risus urna dignissim nisl, a ornare velit orci tristique nisi. Curabitur facilisis libero sed dolor pellentesque nec faucibus metus vehicula.</p>
@@ -177,21 +190,16 @@ to the users need.">
     <script>
     	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
         Modernizr.load({ load: [ 
-			"http://adaptivedesignstudio.com/lib/js/jquery.min.js", 
-			"http://adaptivedesignstudio.com/lib/js/jvdamgaard.min.js", 
+			"lib/js/jquery.min.js", 
+			"lib/js/adaptiveimages.polyfill.src.js", 
+			"lib/js/syze.min.js",
+			"lib/js/adaptivegridsystem.min.js",
+			"lib/js/jvdamgaard.min.js",
+			"lib/js/grid.min.js",
 			"js/functions.js",
-			"http://adaptivedesignstudio.com/lib/js/grid.min.js",
 			('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
 		] });
 	</script>
-    
-    <!-- Responsive design powered by javascript
-    	 rezitech.github.com/syze -->
-	<script src="http://adaptivedesignstudio.com/lib/js/syze.min.js"></script>
-    <script>
-		// Set sizes and size names for use i CSS
-		syze.sizes(1, 320, 480, 720, 960, 1120, 1840).names({ 1:'-oldie', 320:'-mobile-tall', 480:'-mobile-wide', 720:'-tablet-tall', 960:'-tablet-wide', 1120:'-screen', 1840:'-screen-wide' });
-	</script>   
 	
 </body>
 

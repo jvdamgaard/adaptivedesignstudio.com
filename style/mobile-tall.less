@@ -12,13 +12,13 @@
 		background-image: url(../img/sprite.min.png);
 	}
 	.sprite-headers {
-		background-image: url(../img/sprite-headers-small.min.png);
+		background-image: url(../img/sprite-headers-1.min.png);
 	}
 	.sprite-cases {
-		background-image: url(../img/sprite-cases-small.min.jpg);
+		background-image: url(../img/sprite-cases-4x8.min.jpg);
 	}
 	.sprite-profiles {
-		background-image: url(../img/sprite-profiles-smaller.min.jpg);
+		background-image: url(../img/sprite-profiles-3x8.min.jpg);
 	}
 	.sprite-adaptive {
 		background-image: url(../img/sprite-mobile-tall.min.png);
@@ -32,16 +32,9 @@
 		h2 {
 			.cols(4);
 			.gutters-height(1);
-			.icon {
-				display: block;
-				float: left;
-				margin-right: @gutter/2;
-				height: @gutter;
-				margin-top: -1px;
-				&.cases { .sprite-position(0,0); width: 30px }
-				&.work { .sprite-position(30,0); width: 16px }
-				&.about { .sprite-position(46,0); width: 26px }
-				&.contact { .sprite-position(72,0); width: 31px }
+			&:before {
+				font-family: 'IconicFill';
+				margin-right: @gutter/4;
 			}
 		}
 	}
@@ -54,32 +47,9 @@
 		.google-cta-btn;
 		.gutters-height(2);
 		line-height: 2*@gutter;
-		.icon-btn {
-			display: inline-block;
-			vertical-align: middle;
-			margin-right: @gutter/4;
-			margin-top: -3px;
-			height: 16px;
-			&.get-started {
-				.sprite-position(45,192);
-				width: 22px;
-			}
-			&.load-more {
-				.sprite-position(67,192);
-				width: 17px;
-			}
-			&.email {
-				.sprite-position(0,192);
-				width: 21px;
-			}
-			&.linkedin {
-				.sprite-position(84,192);
-				width: 16px;
-			}
-			&.twitter {
-				.sprite-position(21,192);
-				width: 24px;
-			}
+		position: relative;
+		&:before {
+			font-family: 'IconicFill';
 		}
 	}
 	header {
@@ -120,9 +90,8 @@
 	}
 	#adaptive-design {
 		#adaptive-design-figure {
-			.cols(4);
-			.gutters-height(3);
-			.sprite-position(0,0);
+			.cols();
+			width: auto;
 			margin-bottom: @gutter;
 		}
 		#adaptive-design-description {
@@ -131,9 +100,17 @@
 		#get-started {
 			.cols(4);
 			margin-bottom: @gutter;
+			vertical-align: middle;
+			&:before {
+				content: '\e034';
+			vertical-align: middle;
+			}
 		}
 	}
 	#cases {
+		h2:before { 
+			content: '\e058';
+		}
 		.case {
 			.cols-outer(4);
 			.gutters-height(10);
@@ -185,7 +162,11 @@
 		}
 	}
 	#work {
-		h3, #adaptive-design-grid-figure, .text {
+		#adaptive-design-grid-figure {
+			.cols();
+			width: auto;
+		}
+		h3, .text {
 			.cols(4);
 		}
 		.works {
@@ -252,7 +233,6 @@
 	}
 	
 	footer {
-		background: @color-font url(../img/seamlesspaper-dakr.jpg);
 		color: @color-background;
 		padding-top: @gutter;
 		margin-top: 2*@gutter;
