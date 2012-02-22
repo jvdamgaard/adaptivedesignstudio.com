@@ -8,21 +8,6 @@
 	h2 { .h4; }
 	h3 { .h4; }
 	h4 { .base; font-weight: 700; }
-	.sprite {
-		background-image: url(../img/sprite.min.png);
-	}
-	.sprite-headers {
-		background-image: url(../img/sprite-headers-1.min.png);
-	}
-	.sprite-cases {
-		background-image: url(../img/sprite-cases-4x8.min.jpg);
-	}
-	.sprite-profiles {
-		background-image: url(../img/sprite-profiles-3x8.min.jpg);
-	}
-	.sprite-adaptive {
-		background-image: url(../img/sprite-mobile-tall.min.png);
-	}
 	.bordered {
 		.clearfix();
 		border-top: solid @gutter*3/8 @color-font;
@@ -139,11 +124,19 @@
 				.rounded(2px);
 				border: @gutter/4 solid @color-font;
 				overflow: hidden;
+				img {
+					.grayscale();
+				}
 			}
 			&:hover {
 				color: @color-font;
+				text-decoration: underline;
 				.picture {
 					.drop-shadow(0px, 1px, 2px, 0px, 0.2);
+					img {
+						.no-grayscale();
+						.easy-transition(0.5s);
+					}
 				}
 			}
 		}
@@ -177,8 +170,7 @@
 		#adaptive-design-grid-figure {
 			margin-top: @gutter;
 			margin-bottom: @gutter;
-			.gutters-height(6);
-			.sprite-position(0,72);			
+			.gutters-height(6);		
 		}
 	}
 	#about {
@@ -201,9 +193,6 @@
 			.portrait {
 				.cols(1);
 				width: auto;
-				&#jakob-viskum-damgaard {
-					.sprite-position(0,0);
-				}
 			}
 			.btn {
 				.cols(1);

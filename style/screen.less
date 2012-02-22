@@ -4,9 +4,7 @@
 
 /* Styles for screen and above */
 @media screen and (min-width: 1120px) {
-	.sprite {
-		background-image: url(../img/sprite-screen.png);
-	}
+
 	h1 {.h1; font-weight: 700;}
 	header { 
 		#firm-description {
@@ -25,7 +23,6 @@
 	#adaptive-design {
 		#adaptive-design-figure {
 			.cols(10);
-			.sprite-position(0,205);
 		}
 	}
 	#cases {
@@ -33,12 +30,6 @@
 			.cols-left(1);
 			&:nth-child(3n-1) {
 				.cols-left(0);
-			}
-			.psykologviskum-dk {
-				.sprite-position(0,377);
-			}
-			.metteomaibom-dk {
-				.sprite-position(296,377);
 			}
 		}
 		#load-more {
@@ -50,7 +41,6 @@
 			.cols(5);
 			.gutters-height(9);
 			margin-top: 2*@gutter;
-			.sprite-position(0,545);
 		}
 		h3, .text {
 			.cols(7);
@@ -70,12 +60,6 @@
 				.cols(6);
 				.gutters-height(14);
 				margin-bottom: @gutter;
-				&#jakob-viskum-damgaard {
-					.sprite-position(0,761);
-				}
-				&#lene-nannerup-kristensen {
-					.sprite-position(0,1096);
-				}
 			}
 			.btn {
 				.cols(1);
@@ -103,7 +87,6 @@
 			.cols-left(1);
 			.cols-right(1);
 			.gutters-height(8);
-			.sprite-position(0,1432);
 			margin-top: -2*@gutter;
 			margin-bottom: -@gutter;
 		}

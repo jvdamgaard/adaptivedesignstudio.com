@@ -4,9 +4,6 @@
 
 /* Styles for tablet wide and above */
 @media screen and (min-width: 960px) {
-	.sprite {
-		background-image: url(../img/sprite-tablet-wide.png);
-	}
 	.set-base-sizes(0);
 	h1 {.h2; font-weight: 700;}
 	.bordered {
@@ -17,10 +14,6 @@
 			.gutters-height(2);
 			.icon {
 				height: 2*@gutter;
-				&.cases { .sprite-position(232,0); width: 59px }
-				&.work { .sprite-position(195,0); width: 32px }
-				&.about { .sprite-position(297,0); width: 52px }
-				&.contact { .sprite-position(354,0); width: 62px }
 			}
 		}
 	}
@@ -46,7 +39,6 @@
 		#adaptive-design-figure {
 			.cols(8);
 			.gutters-height(7);
-			.sprite-position(0,205);
 		}
 		#adaptive-design-description, #get-started {
 			.cols(4);
@@ -56,12 +48,6 @@
 	#cases {
 		.case {
 			.cols(4);
-			.psykologviskum-dk {
-				.sprite-position(0,377);
-			}
-			.metteomaibom-dk {
-				.sprite-position(296,377);
-			}
 		}
 		#load-more {
 			.cols-left(8);
@@ -72,7 +58,6 @@
 			.cols(5);
 			.gutters-height(9);
 			margin-top: 2*@gutter;
-			.sprite-position(0,545);
 		}
 		h3, .text {
 			.cols(7);
@@ -89,12 +74,6 @@
 				.cols(6);
 				.gutters-height(14);
 				margin-bottom: @gutter;
-				&#jakob-viskum-damgaard {
-					.sprite-position(0,761);
-				}
-				&#lene-nannerup-kristensen {
-					.sprite-position(0,1096);
-				}
 			}
 			.btn {
 				.cols(1);
@@ -122,7 +101,6 @@
 			.cols-left(1);
 			.cols-right(1);
 			.gutters-height(8);
-			.sprite-position(0,1432);
 			margin-top: -2*@gutter;
 			margin-bottom: -@gutter;
 		}
