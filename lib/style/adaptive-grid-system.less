@@ -5,6 +5,7 @@
 -------------------------------------------------------------------------------*/
 
 .cols(@cols:1) {
+	display: block;
 	width: @cols * ( @column + @gutter ) - @gutter;
 	float: left;
 	margin-left: @gutter / 2;
@@ -23,6 +24,7 @@
 .cols-outer(@cols:1) {
 	width: @cols * ( @column + @gutter );
 	float: left;
+	display: block;
 }
 .cols-outer-left(@cols:1) {
 	margin-left: @cols * ( @column + @gutter );

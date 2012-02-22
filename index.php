@@ -63,10 +63,10 @@ to the users need.">
 <div id="adaptive-design">
 	
 	<picture id="adaptive-design-figure">
-		<source src="img/adaptive-design-figure-4x3.png" />
-		<source src="img/adaptive-design-figure-6x5.png" media="min-width: 480px" />
+		<source src="img/adaptive-design-figure-296x72.png" />
+		<source src="img/adaptive-design-figure-456x120.png" media="min-width: 480px" />
 		<!-- Fallback content -->
-		<img src="img/adaptive-design-figure-4x3.png" />
+		<img src="img/adaptive-design-figure-296x72.png" />
 	</picture>
 	
     <p id="adaptive-design-description"><span class="highlighted">We specialize</span> in building websites that are just as brilliant for mobile as they are for the desktop. Contact us to learn how we can make your website adapt to the users need.</p>
@@ -77,8 +77,23 @@ to the users need.">
     <div class="bordered">
         <h2>Cases</h2>
     </div>
-    <a href="http://psykologviskum.dk" target="_blank" class="case"><figure class="sprite-cases psykologviskum-dk"><div class="sprite-cases hover"></div></figure>Psykolog Birgitte Viskum</a>
-    <a href="http://metteomaibom.dk" target="_blank" class="case"><figure class="sprite-cases metteomaibom-dk"><div class="sprite-cases hover"></div></figure>Mette O. Maibom</a>
+    <a href="http://psykologviskum.dk" target="_blank" class="case">
+    	<picture class="picture">
+			<source src="img/cases/psykologviskum-284x180.jpg" />
+			<source src="img/cases/psykologviskum-204x180.jpg" media="min-width: 480px" />
+			<!-- Fallback content -->
+			<img src="img/cases/psykologviskum-284x180.jpg" />
+		</picture>
+    	Psykolog Birgitte Viskum
+	</a>
+    <a href="http://metteomaibom.dk" target="_blank" class="case">
+    	<picture class="picture">
+			<source src="img/cases/metteomaibom-284x180.jpg" />
+			<source src="img/cases/metteomaibom-204x180.jpg" media="min-width: 480px" />
+			<!-- Fallback content -->
+			<img src="img/cases/metteomaibom-284x180.jpg" />
+		</picture>
+		Mette O. Maibom</a>
     <a href="#" id="load-more" class="btn">Load more</a>
 </article>
 
@@ -89,10 +104,10 @@ to the users need.">
     <div id="adaptive-design-grid" class="works">
     	<h3>Adaptive Design Grid</h3>
 		<picture id="adaptive-design-grid-figure">
-			<source src="img/adaptive-grid-system-mobile.png" />
-			<source src="img/adaptive-grid-system-mobile-wide.png" media="min-width: 480px" />
+			<source src="img/adaptive-grid-system-296x144.png" />
+			<source src="img/adaptive-grid-system-456x144.png" media="min-width: 480px" />
 			<!-- Fallback -->
-			<img src="img/adaptive-grid-system-mobile.png" />
+			<img src="img/adaptive-grid-system-296x144.png" />
 		</picture>
         <div class="text">
             <p><span class="highlighted">Lorem ipsum dolor sit</span>  amet, consectetur adipiscing elit. Sed eu orci eros, sed dapibus arcu. Nulla facilisi. Nulla in neque elit, non cursus eros. Duis feugiat diam quam, in sodales purus. Nullam justo justo, auctor et tincidunt ut, placerat nec turpis. Donec id tortor vel tortor aliquam interdum id ut nulla.</p>
@@ -108,7 +123,12 @@ to the users need.">
     <div class="profile">
     	<h3>Our story</h3>
         <h4>Where it all started</h4>
-        <figure id="about-adaptive-design-studio" class="portrait sprite-adaptive"></figure>
+        <picture class="portrait">
+			<source src="img/logo-black-216x192.png" />
+			<source src="img/logo-black-296x192.png" media="min-width: 480px" />
+			<!-- Fallback content -->
+			<img src="img/logo-black-216x192.pngg" />
+		</picture>
         <a href="https://twitter.com/#!/adaptivedesignstudio" target="_blank" class="btn twitter" title="@adaptivedesignstudio"></a>
         <a href="http://linkedin.com" target="_blank" class="btn linkedin" title="Adaptive Design Studio @ LinkedIn"></a>
         <a href="mailto:info@adaptivedesignstudio.com" class="btn email" title="info@adaptivedesignstudio.com"></a>
@@ -119,7 +139,12 @@ to the users need.">
     <div class="profile">
     	<h3>Jakob Viskum Damgaard</h3>
         <h4>Founder, designer and developer</h4>
-        <figure id="jakob-viskum-damgaard" class="portrait sprite-profiles"></figure>
+        <picture class="portrait">
+			<source src="img/jvd-216x192.jpg" />
+			<source src="img/jvd-296x192.jpg" media="min-width: 480px" />
+			<!-- Fallback content -->
+			<img src="img/jvd-216x192.jpg" />
+		</picture>
         <a href="https://twitter.com/#!/jvdamgaard" target="_blank" class="btn twitter" title="@jvdamgaard"></a>
         <a href="http://www.linkedin.com/profile/view?id=165828189" target="_blank" class="btn linkedin" title="Jakob Viskum Damgaard @ LinkedIn"></a>
         <a href="mailto:jakob@adaptivedesignstudio.com" class="btn email" title="jakob@adaptivedesignstudio.com"></a>
@@ -158,6 +183,12 @@ to the users need.">
 </article>
 
 <footer>
+	<picture id="logo">
+		<source src="img/logo-56x56.png" />
+		<source src="img/logo-136x136.png" media="min-width: 480px" />
+		<!-- Fallback content -->
+		<img src="img/logo-56x56.png" />
+	</picture>
 	<figure class="sprite-adaptive logo"></figure>
     <p class="text">This site is © Adaptive Design Studio 2012 and all our work is  licensed under <a href="#">MIT</a>. The typeface used is <a href="#">FF Dagny</a>, served via Typekit. Javascript powered by <a href="#">jQuery</a>, CSS by <a href="#">LESS</a> and CMS by <a href="#">ProcessWire</a>.</p>
 </footer>

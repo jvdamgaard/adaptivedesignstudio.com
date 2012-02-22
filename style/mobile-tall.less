@@ -133,41 +133,17 @@
 			text-decoration: none;
 			line-height: 2*@gutter;
 			text-align: center;
-			figure {
+			.picture {
 				.cols(4);
 				.gutters-height(8);
 				.rounded(2px);
 				border: @gutter/4 solid @color-font;
 				overflow: hidden;
-				.hover {
-					width: 100%;
-					height: 100%;
-					opacity: 0;
-					visibility: hidden; /* Old IE */
-					.easy-transition();
-				}
-				&.psykologviskum-dk {
-					.sprite-position(0,0);
-					.hover {
-						.sprite-position(296,0);
-					}
-				}
-				&.metteomaibom-dk {
-					.sprite-position(0,192);
-					.hover {
-						.sprite-position(296,192);
-					}
-				}
 			}
 			&:hover {
 				color: @color-font;
-				figure {
+				.picture {
 					.drop-shadow(0px, 1px, 2px, 0px, 0.2);
-					.hover {
-						opacity: 1;
-						visibility: visible; /* Old IE */
-						.easy-transition();
-					}
 				}
 			}
 		}
@@ -223,11 +199,8 @@
 				margin-bottom: @gutter;
 			}
 			.portrait {
-				.cols(3);
-				.gutters-height(8);
-				&#about-adaptive-design-studio {
-					.sprite-position(80,216);
-				}
+				.cols(1);
+				width: auto;
 				&#jakob-viskum-damgaard {
 					.sprite-position(0,0);
 				}
@@ -295,9 +268,8 @@
 		a:hover {
 			color: @color-1;
 		}
-		.logo {
+		#logo {
 			.cols(1);
-			.sprite-position(12,216);
 			height: 56px;
 		}
 		.text {
