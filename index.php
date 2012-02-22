@@ -97,10 +97,9 @@ to the users need.">
 		<picture id="adaptive-design-grid-figure">
 			<source src="img/adaptive-grid-system-mobile.png" />
 			<source src="img/adaptive-grid-system-mobile-wide.png" media="min-width: 480px" />
-			<!-- Fallback content -->
+			<!-- Fallback -->
 			<img src="img/adaptive-grid-system-mobile.png" />
 		</picture>
-        <!--<figure id="adaptive-design-grid-figure" class="sprite-adaptive"></figure>-->
         <div class="text">
             <p><span class="highlighted">Lorem ipsum dolor sit</span>  amet, consectetur adipiscing elit. Sed eu orci eros, sed dapibus arcu. Nulla facilisi. Nulla in neque elit, non cursus eros. Duis feugiat diam quam, in sodales purus. Nullam justo justo, auctor et tincidunt ut, placerat nec turpis. Donec id tortor vel tortor aliquam interdum id ut nulla.</p>
             <p>Vestibulum sed facilisis nibh. Praesent consectetur diam non metus rutrum ac hendrerit leo cursus. Phasellus rutrum, orci sed tincidunt pharetra, risus urna dignissim nisl, a ornare velit orci tristique nisi. Curabitur facilisis libero sed dolor pellentesque nec faucibus metus vehicula.</p>
@@ -185,13 +184,9 @@ to the users need.">
 
 </div>
 
-	<!-- Async load:
-    	jQuery
-        Response
-        JVDamgaard
-        Custom functions -->
+	<!-- Async load -->
     <script>
-    	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    	window._gaq = [['_setAccount','UA-29383798-1'],['_trackPageview'],['_trackPageLoadTime']];
         Modernizr.load({ load: [ 
 			"lib/js/jquery.min.js", 
 			"lib/js/adaptiveimages.polyfill.src.js", 
