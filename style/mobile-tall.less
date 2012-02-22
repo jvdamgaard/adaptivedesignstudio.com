@@ -24,6 +24,7 @@
 		background-image: url(../img/sprite-mobile-tall.min.png);
 	}
 	.bordered {
+		.clearfix();
 		border-top: solid @gutter*3/8 @color-font;
 		border-bottom: solid 1px @color-background-2;
 		padding: @gutter*5/8 0 @gutter - 1px 0;
@@ -103,6 +104,7 @@
 		}
 	}
 	#adaptive-design {
+		.clearfix();
 		#adaptive-design-figure {
 			.cols();
 			width: auto;
@@ -120,6 +122,7 @@
 		}
 	}
 	#cases {
+		.clearfix();
 		h2:before { 
 			content: 'f';
 		}
@@ -177,6 +180,7 @@
 		}
 	}
 	#work {
+		.clearfix();
 		h2:before {
 			content: 'g';
 		}
@@ -188,6 +192,7 @@
 			.cols(4);
 		}
 		.works {
+			.clearfix();
 			margin-top: @gutter;
 			&:first-child {
 				margin-top: 0px;
@@ -201,10 +206,12 @@
 		}
 	}
 	#about {
+		.clearfix();
 		h2:before { 
 			content: 'e';
 		}
 		.profile {
+			.clearfix();
 			margin-top: @gutter;
 			&:first-child {
 				margin-top: 0px;
@@ -252,6 +259,7 @@
 		}
 	}
 	#contact {
+		.clearfix();
 		h2:before { 
 			content: 'h';
 		}
@@ -259,6 +267,7 @@
 			.cols(4);
 		}
 		#tagline h3 {
+			.clearfix();
 			margin-bottom: @gutter;
 		}
 		#contact-get-started {
@@ -269,6 +278,7 @@
 			}
 		}
 		.box {
+			.clearfix();
 			margin-top: @gutter;
 			&:first-child {
 				margin-top: 0px;
@@ -277,6 +287,7 @@
 	}
 	
 	footer {
+		.clearfix();
 		color: @color-background;
 		background: @color-font;
 		padding-top: @gutter;

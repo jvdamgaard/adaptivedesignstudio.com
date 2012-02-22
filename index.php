@@ -59,7 +59,6 @@ to the users need.">
     	<a href="#about" class="about">About</a>
     	<a href="#contact" class="contact">Contact</a>
     </nav>
-    <div class="clearfix"></div>
 </header>
 <div id="adaptive-design">
 	
@@ -72,24 +71,19 @@ to the users need.">
 	
     <p id="adaptive-design-description"><span class="highlighted">We specialize</span> in building websites that are just as brilliant for mobile as they are for the desktop. Contact us to learn how we can make your website adapt to the users need.</p>
     <a href="#get-started" id="get-started" class="btn iconic bars_alt">Get started</a>
-    <div class="clearfix"></div>
 </div>
 
 <article id="cases">
     <div class="bordered">
         <h2>Cases</h2>
-        <div class="clearfix"></div>
     </div>
     <a href="http://psykologviskum.dk" target="_blank" class="case"><figure class="sprite-cases psykologviskum-dk"><div class="sprite-cases hover"></div></figure>Psykolog Birgitte Viskum</a>
     <a href="http://metteomaibom.dk" target="_blank" class="case"><figure class="sprite-cases metteomaibom-dk"><div class="sprite-cases hover"></div></figure>Mette O. Maibom</a>
-    <div class="clearfix"></div>
-    <div class="clearfix"></div>
     <a href="#" id="load-more" class="btn">Load more</a>
 </article>
 
 <article id="work">
     <div class="bordered">
-        <div class="clearfix"></div>
         <h2>Work</h2>
     </div>
     <div id="adaptive-design-grid" class="works">
@@ -104,14 +98,11 @@ to the users need.">
             <p><span class="highlighted">Lorem ipsum dolor sit</span>  amet, consectetur adipiscing elit. Sed eu orci eros, sed dapibus arcu. Nulla facilisi. Nulla in neque elit, non cursus eros. Duis feugiat diam quam, in sodales purus. Nullam justo justo, auctor et tincidunt ut, placerat nec turpis. Donec id tortor vel tortor aliquam interdum id ut nulla.</p>
             <p>Vestibulum sed facilisis nibh. Praesent consectetur diam non metus rutrum ac hendrerit leo cursus. Phasellus rutrum, orci sed tincidunt pharetra, risus urna dignissim nisl, a ornare velit orci tristique nisi. Curabitur facilisis libero sed dolor pellentesque nec faucibus metus vehicula.</p>
         </div>
-        <div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
 </article>
 
 <article id="about">
     <div class="bordered">
-        <div class="clearfix"></div>
         <h2>About</h2>
     </div>
     <div class="profile">
@@ -124,7 +115,6 @@ to the users need.">
         <p><span class="highlighted">Pellentesque in turpis pharetra</span> mauris fermentum pharetra. Proin sollicitudin congue purus. Nunc in vestibulum elit.</p>
         <p>Etiam dapibus ornare diam, ac suscipit tortor consequat eleifend. Pellentesque rutrum consectetur nisl nec iaculis.</p>
         <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris semper ipsum id magna molestie eu euismod ipsum porttitor.</p>
-    	<div class="clearfix"></div>
     </div>
     <div class="profile">
     	<h3>Jakob Viskum Damgaard</h3>
@@ -135,35 +125,28 @@ to the users need.">
         <a href="mailto:jakob@adaptivedesignstudio.com" class="btn email" title="jakob@adaptivedesignstudio.com"></a>
         <p><span class="highlighted">Curabitur quis</span> ultrices sem. Nam at felis sit amet ante volutpat molestie in vehicula purus. Nullam nec orci dui, et bibendum mi. Donec ut porta quam. Mauris tempor nunc vel lectus placerat scelerisque ut eu felis.</p>
         <p>Vivamus in orci nulla, vitae bibendum mauris. Phasellus sollicitudin neque at massa ornare eget pellentesque elit porta. Suspendisse aliquam, ante quis adipiscing tincidunt, sem quam volutpat massa, at ullamcorper est massa sed ante.</p>
-    	<div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
 </article>
 
 <article id="contact">
     <div class="bordered">
-        <div class="clearfix"></div>
         <h2>Contact</h2>
     </div>
     <div id="tagline" class="box">
     	<h3><span class="highlighted">Thanks for looking.</span> We'd love to hear from you.</h3>
-    	<div class="clearfix"></div>
     </div>
     <div id="hire-us" class="box">
     	<h3>Let's make business</h3>
         <p>Vivamus in orci nulla, vitae bibendum mauris. Phasellus sollicitudin neque at massa ornare eget pellentesque elit porta. Suspendisse aliquam, ante quis adipiscing tincidunt, sem quam volutpat massa, at ullamcorper est massa sed ante.</p>
-    	<div class="clearfix"></div>
         <a href="#get-started" id="contact-get-started" class="btn">Get started</a>
     </div>
     <div id="follow" class="box">
     	<h3>Follow</h3>
         <p>Follow <a href="https://twitter.com/#!/adaptivedesignstudio">@adaptivedesignstudio</a> on Twitter for more about our work and cases. We'd like to share all our knowledge with alle interested, som stay tuned.</p>
-    	<div class="clearfix"></div>
     </div>
     <div id="email" class="box">
     	<h3>Email</h3>
         <p>Send an e-mail to <a href="mailto:info@adaptivedesignstudio.com">info@adaptivedesignstudio.com</a> if you have any questions, want to learn more about our work or think we should work together.</p>
-    	<div class="clearfix"></div>
     </div>
     <div id="location" class="box">
     	<h3>Location</h3>
@@ -171,15 +154,12 @@ to the users need.">
 		Volden 12, 3<br>
 		8000 Aarhus C<br>
 		Denmark</p>
-    	<div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
 </article>
 
 <footer>
 	<figure class="sprite-adaptive logo"></figure>
     <p class="text">This site is © Adaptive Design Studio 2012 and all our work is  licensed under <a href="#">MIT</a>. The typeface used is <a href="#">FF Dagny</a>, served via Typekit. Javascript powered by <a href="#">jQuery</a>, CSS by <a href="#">LESS</a> and CMS by <a href="#">ProcessWire</a>.</p>
-    <div class="clearfix"></div>
 </footer>
 
 </div>
