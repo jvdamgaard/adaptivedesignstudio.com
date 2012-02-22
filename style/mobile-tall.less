@@ -1,9 +1,9 @@
 /* 	Mobile Tall
-	greater than 0px
+	320px - 479px
 	4 cols */
 
-/* Styles for all devices */
-.gt-oldie {
+/* Styles for mobile tall and above */
+@media screen and (min-width: 320px) {
 	h1 { .h4; font-weight: 700;}
 	h2 { .h4; }
 	h3 { .h4; }
@@ -309,7 +309,7 @@
 }
 
 /* Specific for mobile tall */
-.is-mobile-tall {
+@media screen and (min-width: 320px) and (max-width: 479px) {
 	header {
 		#firm-description {
 			.cols(4);

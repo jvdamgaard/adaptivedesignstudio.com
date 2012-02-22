@@ -49,17 +49,10 @@
 	.gutters-height(@y);
 }
 
-/* Set wrapper size according to media width */
 .wrapper {
 	margin: 0 auto;
 	position: relative;
 }
-.is-mobile-tall .wrapper { 	.cols-outer-width(4); }
-.is-mobile-wide .wrapper { 	.cols-outer-width(6); }
-.is-tablet-tall .wrapper { 	.cols-outer-width(9); }
-.is-tablet-wide .wrapper { 	.cols-outer-width(12); }
-.is-screen .wrapper 	 { 	.cols-outer-width(14); }
-.is-screen-wide .wrapper { 	.cols-outer-width(23); }
 
 /* Show grid: for development */
 #showgrid {
@@ -103,22 +96,6 @@
 		}
 	}
 }
-/* Align gridsystem with column i iddle when uneven column numbers */
-.is-tablet-tall, .is-screen-wide {
-	#showgrid .allGrids {
-		margin-left: 0px - ( 41 * ( @column + @gutter ) / 2 );
-	}
-}
-.is-mobile-tall #showgrid .allGrids .col:nth-last-child(n+5),
-.is-mobile-wide #showgrid .allGrids .col:nth-last-child(n+7),
-.is-tablet-tall #showgrid .allGrids .col:nth-last-child(n+10),
-.is-tablet-wide #showgrid .allGrids .col:nth-last-child(n+13),
-     .is-screen #showgrid .allGrids .col:nth-last-child(n+15),
-.is-screen-wide #showgrid .allGrids .col:nth-last-child(n+24)
-{
-	.opacity(0.05);
-	.easy-transition();
-}
 
 .show-grid-active #showgrid {
 	display: block;
@@ -138,13 +115,6 @@
 		display: none;
 	}
 }
-/* Show description matching medias width */
-.is-mobile-tall #grid_description div.mobile { display: block; }
-.is-mobile-wide #grid_description div.mobile-wide {	display: block; }
-.is-tablet-tall #grid_description div.tablet { display: block; }
-.is-tablet-wide #grid_description div.tablet-wide {	display: block; }
-.is-screen #grid_description div.screen { display: block; }
-.is-screen-wide #grid_description div.screen-wide { display: block; }
 
 .fold {
 	position: absolute;
@@ -160,25 +130,6 @@
 		position: absolute;
 		padding: 0 @gutter/2;
 	}
-}
-/* Set fold line */
-.is-mobile-tall {
-	.fold { top: 480px; }
-}
-.is-mobile-wide {
-	.fold { top: 320px; }
-}
-.is-tablet-tall {
-	.fold { top: 648px; }
-}
-.is-tablet-wide {
-	.fold { top: 648px; }
-}
-.is-screen {
-	.fold { top: 680px; }
-}
-.is-screen-wide {
-	.fold { top: 1080px; }
 }
 
 #toggle {
@@ -214,5 +165,108 @@
 	float: left;
 	&:last-child {
 		margin-bottom: 0;
+	}
+}
+
+/* Mobile tall */
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.wrapper {
+		.cols-outer-width(4); 
+	}
+	#showgrid .allGrids .col:nth-last-child(n+5) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#grid_description div.mobile { 
+		display: block; 
+	}
+	.fold { 
+		top: 480px; 
+	}
+}
+/* Mobile wide */
+@media screen and (min-width: 480px) and (max-width: 719px) { 
+	.wrapper { 	
+		.cols-outer-width(6); 
+	}
+	#showgrid .allGrids .col:nth-last-child(n+7) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#grid_description div.mobile-wide { 
+		display: block; 
+	}
+	.fold { 
+		top: 320px; 
+	}
+}
+/* Tablet tall */
+@media screen and (min-width: 720px) and (max-width: 959px) { 
+	.wrapper { 	
+		.cols-outer-width(9); 
+	}
+	#showgrid .allGrids .col:nth-last-child(n+10) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#showgrid .allGrids {
+		margin-left: 0px - ( 41 * ( @column + @gutter ) / 2 );
+	}
+	#grid_description div.tablet { 
+		display: block; 
+	}
+	.fold { 
+		top: 950px; 
+	}
+}
+/* Tablet wide */
+@media screen and (min-width: 960px) and (max-width: 1119px) { 
+	.wrapper { 	
+		.cols-outer-width(12); 
+	}
+	#showgrid .allGrids .col:nth-last-child(n+13) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#grid_description div.tablet-wide { 
+		display: block; 
+	}
+	.fold { 
+		top: 700px; 
+	}
+}
+/* Screen */
+@media screen and (min-width: 1120px) and (max-width: 1839px) { 
+	.wrapper 	 { 	
+		.cols-outer-width(14); 
+	}
+	#showgrid .allGrids .col:nth-last-child(n+15) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#grid_description div.screen { 
+		display: block; 
+	}
+	.fold { 
+		top: 680px; 
+	}
+}
+/* Screen wide */
+@media screen and (min-width: 1840px) { 
+	.wrapper { 	
+		.cols-outer-width(23); 
+	}
+	#showgrid .allGrids .col:nth-last-child(n+24) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#showgrid .allGrids {
+		margin-left: 0px - ( 41 * ( @column + @gutter ) / 2 );
+	}
+	#grid_description div.screen-wide { 
+		display: block; 
+	}
+	.fold { 
+		top: 1080px; 
 	}
 }

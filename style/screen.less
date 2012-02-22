@@ -1,9 +1,9 @@
 /* 	Screen
-	greater than 1119px
+	1120px - 1839px
 	14 cols */
 
 /* Styles for screen and above */
-.gt-tablet-wide {
+@media screen and (min-width: 1120px) {
 	.sprite {
 		background-image: url(../img/sprite-screen.png);
 	}
@@ -115,7 +115,7 @@
 }
 
 /* Specific for screen */
-.is-screen {
+@media screen and (min-width: 1120px) and (max-width: 1839px) {
 	#cases {
 		.case {
 			&:nth-child(3n-1) {

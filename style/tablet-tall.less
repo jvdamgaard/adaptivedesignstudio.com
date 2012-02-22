@@ -1,9 +1,9 @@
 /* 	Tablet Tall
-	greater than 719px
+	720px - 959px
 	9 cols */
 	
 /* Styles for tablet tall and above */
-.gt-mobile-wide {
+@media screen and (min-width: 720px) {
 	.sprite {
 		background-image: url(../img/sprite-tablet-tall.min.png);
 	}
@@ -129,7 +129,7 @@
 }
 
 /* Specific for tablet tall */
-.is-tablet-tall {
+@media screen and (min-width: 720px) and (max-width: 959px) {
 	#cases {
 		.case {
 			&:nth-child(odd) {

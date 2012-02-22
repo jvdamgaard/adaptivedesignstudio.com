@@ -170,9 +170,6 @@ to the users need.">
         Modernizr.load({ load: [ 
 			"lib/js/jquery.min.js", 
 			"lib/js/adaptiveimages.polyfill.src.js", 
-			"lib/js/syze.min.js",
-			"lib/js/adaptivegridsystem.min.js",
-			"lib/js/jvdamgaard.min.js",
 			"lib/js/grid.min.js",
 			"js/functions.js",
 			('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
