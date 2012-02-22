@@ -32,9 +32,15 @@
 		h2 {
 			.cols(4);
 			.gutters-height(1);
+			position: relative;
+			padding-left: @gutter*1.5;
 			&:before {
-				font-family: 'IconicFill';
-				margin-right: @gutter/4;
+				.pictos();
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				font-size: @gutter;
+				line-height: @gutter;
 			}
 		}
 	}
@@ -47,9 +53,9 @@
 		.google-cta-btn;
 		.gutters-height(2);
 		line-height: 2*@gutter;
-		position: relative;
 		&:before {
-			font-family: 'IconicFill';
+			.pictos();
+			margin-right: @gutter/4;
 		}
 	}
 	header {
@@ -61,30 +67,38 @@
 			.cols;
 			.gutters-height(3);
 			.small;
+			display: block;
+			position: relative;
+			padding-top: 2*@gutter;
 			line-height: @gutter;
 			font-weight: 700;
-			display: block;
-			cursor: pointer;
 			text-align: center;
 			text-decoration: none;
 			outline: 0;
+			&:before {
+				.pictos();
+				display: block;
+				position: absolute;
+				width: 100%;
+				top: 5px;
+				font-size: 1.5*@gutter;
+				line-height: 2*@gutter;
+			}
+			&.cases:before {
+				content: 'f';
+			}
+			&.work:before {
+				content: 'g';
+			}
+			&.about:before {
+				content: 'e';
+			}
+			&.contact:before {
+				content: 'h';
+			}
 			&:hover {
 				color: @color-2;
 				.text-shadow(0px,1px,1px,0px,rgba(0,0,0,0.2));
-				.icon {
-					&.cases { .sprite-position(56,0) }
-					&.work { .sprite-position(56,48) }
-					&.about { .sprite-position(56,96) }
-					&.contact { .sprite-position(56,144) }
-				}
-			}
-			.icon {
-				.cols-width;
-				.gutters-height(2);
-				&.cases { .sprite-position(0,0) }
-				&.work { .sprite-position(0,48) }
-				&.about { .sprite-position(0,96) }
-				&.contact { .sprite-position(0,144) }
 			}
 		}
 	}
@@ -100,16 +114,14 @@
 		#get-started {
 			.cols(4);
 			margin-bottom: @gutter;
-			vertical-align: middle;
 			&:before {
-				content: '\e034';
-			vertical-align: middle;
+				content: 'b';
 			}
 		}
 	}
 	#cases {
 		h2:before { 
-			content: '\e058';
+			content: 'f';
 		}
 		.case {
 			.cols-outer(4);
@@ -159,9 +171,15 @@
 		#load-more {
 			.cols(4);
 			margin-bottom: @gutter;
+			&:before {
+				content: 'i';
+			}
 		}
 	}
 	#work {
+		h2:before {
+			content: 'g';
+		}
 		#adaptive-design-grid-figure {
 			.cols();
 			width: auto;
@@ -183,6 +201,9 @@
 		}
 	}
 	#about {
+		h2:before { 
+			content: 'e';
+		}
 		.profile {
 			margin-top: @gutter;
 			&:first-child {
@@ -207,13 +228,33 @@
 			.btn {
 				.cols(1);
 				margin-bottom: @gutter;
-				.icon-btn {
-					margin-right: 0px;
+				overflow: hidden;
+				position: relative;
+				&:before {
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					font-size: 1.25*@gutter;
+					line-height: 2*@gutter;
+					width: 100%;
+					text-align: center;
+				}
+				&.twitter:before {
+					content: 'c';
+				}
+				&.linkedin:before {
+					content: 'a';
+				}
+				&.email:before {
+					content: 'd';
 				}
 			}
 		}
 	}
 	#contact {
+		h2:before { 
+			content: 'h';
+		}
 		#tagline, #hire-us, #follow, #email, #location {
 			.cols(4);
 		}
@@ -223,6 +264,9 @@
 		#contact-get-started {
 			.cols-width(4);
 			margin-bottom: @gutter;
+			&:before {
+				content: 'b';
+			}
 		}
 		.box {
 			margin-top: @gutter;

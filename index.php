@@ -22,6 +22,9 @@ to the users need.">
     <!-- Modernizr: enables HTML5 elements & feature detects -->
     <script src="lib/js/modernizr.min.js"></script>
     
+    <!-- Use Pictos for icons -->
+    <link href="//get.pictos.cc/fonts/873/1" rel="stylesheet" type="text/css">
+    
     <!-- Uses LESS for for styling document.
 		 Documentation: lesscss.org -->
     <link rel="stylesheet/less" type="text/css" href="style/style.less">
@@ -51,10 +54,10 @@ to the users need.">
         <p>Your site doesn't live on a stationary desk any longer</p>
     </div>
     <nav>
-    	<a href="#cases"><figure class="sprite icon cases"></figure>Cases</a>
-    	<a href="#work"><figure class="sprite icon work"></figure>Work</a>
-    	<a href="#about"><figure class="sprite icon about"></figure>About</a>
-    	<a href="#contact"><figure class="sprite icon contact"></figure>Contact</a>
+    	<a href="#cases" class="cases">Cases</a>
+    	<a href="#work" class="work">Work</a>
+    	<a href="#about" class="about">About</a>
+    	<a href="#contact" class="contact">Contact</a>
     </nav>
     <div class="clearfix"></div>
 </header>
@@ -80,14 +83,14 @@ to the users need.">
     <a href="http://psykologviskum.dk" target="_blank" class="case"><figure class="sprite-cases psykologviskum-dk"><div class="sprite-cases hover"></div></figure>Psykolog Birgitte Viskum</a>
     <a href="http://metteomaibom.dk" target="_blank" class="case"><figure class="sprite-cases metteomaibom-dk"><div class="sprite-cases hover"></div></figure>Mette O. Maibom</a>
     <div class="clearfix"></div>
-    <a href="#" id="load-more" class="btn"><figure class="icon-btn load-more sprite"></figure>Load more</a>
     <div class="clearfix"></div>
+    <a href="#" id="load-more" class="btn">Load more</a>
 </article>
 
 <article id="work">
     <div class="bordered">
-        <h2><figure class="icon work sprite-headers"></figure> Work</h2>
         <div class="clearfix"></div>
+        <h2>Work</h2>
     </div>
     <div id="adaptive-design-grid" class="works">
     	<h3>Adaptive Design Grid</h3>
@@ -109,16 +112,16 @@ to the users need.">
 
 <article id="about">
     <div class="bordered">
-        <h2><figure class="icon about sprite-headers"></figure> About</h2>
         <div class="clearfix"></div>
+        <h2>About</h2>
     </div>
     <div class="profile">
     	<h3>Our story</h3>
         <h4>Where it all started</h4>
         <figure id="about-adaptive-design-studio" class="portrait sprite-adaptive"></figure>
-        <a href="https://twitter.com/#!/adaptivedesignstudio" target="_blank" class="btn twitter" title="@adaptivedesignstudio"><figure class="icon-btn twitter sprite"></figure></a>
-        <a href="http://linkedin.com" target="_blank" class="btn linkedin" title="Adaptive Design Studio @ LinkedIn"><figure class="icon-btn linkedin sprite"></figure></a>
-        <a href="mailto:info@adaptivedesignstudio.com" class="btn email" title="info@adaptivedesignstudio.com"><figure class="icon-btn email sprite"></figure></a>
+        <a href="https://twitter.com/#!/adaptivedesignstudio" target="_blank" class="btn twitter" title="@adaptivedesignstudio"></a>
+        <a href="http://linkedin.com" target="_blank" class="btn linkedin" title="Adaptive Design Studio @ LinkedIn"></a>
+        <a href="mailto:info@adaptivedesignstudio.com" class="btn email" title="info@adaptivedesignstudio.com"></a>
         <p><span class="highlighted">Pellentesque in turpis pharetra</span> mauris fermentum pharetra. Proin sollicitudin congue purus. Nunc in vestibulum elit.</p>
         <p>Etiam dapibus ornare diam, ac suscipit tortor consequat eleifend. Pellentesque rutrum consectetur nisl nec iaculis.</p>
         <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris semper ipsum id magna molestie eu euismod ipsum porttitor.</p>
@@ -128,9 +131,9 @@ to the users need.">
     	<h3>Jakob Viskum Damgaard</h3>
         <h4>Founder, designer and developer</h4>
         <figure id="jakob-viskum-damgaard" class="portrait sprite-profiles"></figure>
-        <a href="https://twitter.com/#!/jvdamgaard" target="_blank" class="btn twitter" title="@jvdamgaard"><figure class="icon-btn twitter sprite"></figure></a>
-        <a href="http://www.linkedin.com/profile/view?id=165828189" target="_blank" class="btn linkedin" title="Jakob Viskum Damgaard @ LinkedIn"><figure class="icon-btn linkedin sprite"></figure></a>
-        <a href="mailto:jakob@adaptivedesignstudio.com" class="btn email" title="jakob@adaptivedesignstudio.com"><figure class="icon-btn email sprite"></figure></a>
+        <a href="https://twitter.com/#!/jvdamgaard" target="_blank" class="btn twitter" title="@jvdamgaard"></a>
+        <a href="http://www.linkedin.com/profile/view?id=165828189" target="_blank" class="btn linkedin" title="Jakob Viskum Damgaard @ LinkedIn"></a>
+        <a href="mailto:jakob@adaptivedesignstudio.com" class="btn email" title="jakob@adaptivedesignstudio.com"></a>
         <p><span class="highlighted">Curabitur quis</span> ultrices sem. Nam at felis sit amet ante volutpat molestie in vehicula purus. Nullam nec orci dui, et bibendum mi. Donec ut porta quam. Mauris tempor nunc vel lectus placerat scelerisque ut eu felis.</p>
         <p>Vivamus in orci nulla, vitae bibendum mauris. Phasellus sollicitudin neque at massa ornare eget pellentesque elit porta. Suspendisse aliquam, ante quis adipiscing tincidunt, sem quam volutpat massa, at ullamcorper est massa sed ante.</p>
     	<div class="clearfix"></div>
@@ -140,8 +143,8 @@ to the users need.">
 
 <article id="contact">
     <div class="bordered">
-        <h2><figure class="icon contact sprite-headers"></figure> Contact</h2>
         <div class="clearfix"></div>
+        <h2>Contact</h2>
     </div>
     <div id="tagline" class="box">
     	<h3><span class="highlighted">Thanks for looking.</span> We'd love to hear from you.</h3>
@@ -150,8 +153,8 @@ to the users need.">
     <div id="hire-us" class="box">
     	<h3>Let's make business</h3>
         <p>Vivamus in orci nulla, vitae bibendum mauris. Phasellus sollicitudin neque at massa ornare eget pellentesque elit porta. Suspendisse aliquam, ante quis adipiscing tincidunt, sem quam volutpat massa, at ullamcorper est massa sed ante.</p>
-        <a href="#get-started" id="contact-get-started" class="btn"><figure class="icon-btn get-started sprite"></figure>Get started</a>
     	<div class="clearfix"></div>
+        <a href="#get-started" id="contact-get-started" class="btn">Get started</a>
     </div>
     <div id="follow" class="box">
     	<h3>Follow</h3>
