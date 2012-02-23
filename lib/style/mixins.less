@@ -1,3 +1,4 @@
+/* Not working on chrome before version 18: DON'T USE YET */
 .grayscale() {
 	filter: url(../img/filters.svg#desaturate); /* Firefox 3.5+ */
     filter: gray; /* IE5+ */
@@ -6,4 +7,9 @@
 .no-grayscale() {
     filter: none;
     -webkit-filter: grayscale(0);
+}
+
+.sprite-position(@x,@y) {
+	background-position: 0px-@x 0px-@y;
+	background-repeat: no-repeat;
 }

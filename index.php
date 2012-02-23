@@ -78,7 +78,7 @@ to the users need.">
         <h2>Cases</h2>
     </div>
     <a href="http://psykologviskum.dk" target="_blank" class="case">
-    	<picture class="picture">
+    	<picture class="picture" id="psykologviskum">
 			<source src="img/cases/psykologviskum-284x180.jpg" />
 			<source src="img/cases/psykologviskum-204x180.jpg" media="min-width: 480px" />
 			<!-- Fallback content -->
@@ -87,7 +87,7 @@ to the users need.">
     	Psykolog Birgitte Viskum
 	</a>
     <a href="http://metteomaibom.dk" target="_blank" class="case">
-    	<picture class="picture">
+    	<picture class="picture" id="metteomaibom">
 			<source src="img/cases/metteomaibom-284x180.jpg" />
 			<source src="img/cases/metteomaibom-204x180.jpg" media="min-width: 480px" />
 			<!-- Fallback content -->
