@@ -63,6 +63,7 @@ to the users need.">
 	<picture id="adaptive-design-figure">
 		<source src="img/adaptive-design-figure-296x72.png" />
 		<source src="img/adaptive-design-figure-456x120.png" media="min-width: 480px" />
+		<source src="img/adaptive-design-figure-376x96.png" media="min-width: 720px" />
 		<!-- Fallback content -->
 		<img src="img/adaptive-design-figure-296x72.png" />
 	</picture>
@@ -79,6 +80,7 @@ to the users need.">
     	<picture class="picture" id="psykologviskum">
 			<source src="img/cases/psykologviskum-284x180.jpg" />
 			<source src="img/cases/psykologviskum-204x180.jpg" media="min-width: 480px" />
+			<source src="img/cases/psykologviskum-284x180.jpg" media="min-width: 720px" />
 			<!-- Fallback content -->
 			<img src="img/cases/psykologviskum-284x180.jpg" />
 		</picture>
@@ -88,6 +90,7 @@ to the users need.">
     	<picture class="picture" id="metteomaibom">
 			<source src="img/cases/metteomaibom-284x180.jpg" />
 			<source src="img/cases/metteomaibom-204x180.jpg" media="min-width: 480px" />
+			<source src="img/cases/metteomaibom-284x180.jpg" media="min-width: 720px" />
 			<!-- Fallback content -->
 			<img src="img/cases/metteomaibom-284x180.jpg" />
 		</picture>
@@ -104,6 +107,7 @@ to the users need.">
 		<picture id="adaptive-design-grid-figure">
 			<source src="img/adaptive-grid-system-296x144.png" />
 			<source src="img/adaptive-grid-system-456x144.png" media="min-width: 480px" />
+			<source src="img/adaptive-grid-system-296x144.png" media="min-width: 720px" />
 			<!-- Fallback -->
 			<img src="img/adaptive-grid-system-296x144.png" />
 		</picture>
@@ -124,6 +128,7 @@ to the users need.">
         <picture class="portrait">
 			<source src="img/logo-black-216x192.png" />
 			<source src="img/logo-black-296x192.png" media="min-width: 480px" />
+			<source src="img/logo-black-216x192.png" media="min-width: 720px" />
 			<!-- Fallback content -->
 			<img src="img/logo-black-216x192.png" />
 		</picture>
@@ -140,6 +145,7 @@ to the users need.">
         <picture class="portrait">
 			<source src="img/jvd-216x192.jpg" />
 			<source src="img/jvd-296x192.jpg" media="min-width: 480px" />
+			<source src="img/jvd-216x192.jpg" media="min-width: 720px" />
 			<!-- Fallback content -->
 			<img src="img/jvd-216x192.jpg" />
 		</picture>
@@ -183,7 +189,7 @@ to the users need.">
 <footer>
 	<picture id="logo">
 		<source src="img/logo-56x56.png" />
-		<source src="img/logo-136x136.png" media="min-width: 480px" />
+		<source src="img/logo-136x144.png" media="min-width: 480px" />
 		<!-- Fallback content -->
 		<img src="img/logo-56x56.png" />
 	</picture>

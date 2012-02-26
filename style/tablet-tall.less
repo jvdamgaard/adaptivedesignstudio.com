@@ -20,23 +20,12 @@
 			.cols(5);
 			text-align: left;
 		}
-		h1 {
-			#logo {
-				height: 16px;
-				width: 16px;
-				margin-bottom: 1px;
-			}
-		}
 		nav {
 			.cols-outer-left(0);
 			.cols-outer-right(0);
 		}
 	}
 	#adaptive-design {
-		#adaptive-design-figure {
-			.cols(5);
-			.gutters-height(4);
-		}
 		#adaptive-design-description {
 			.cols(4);
 		}
@@ -47,9 +36,9 @@
 	}
 	#cases {
 		.case {
-			.cols(4);
-			figure {
-				.cols-width(4);
+			.cols-outer(4);
+			.picture {
+				.cols(4);
 			}
 		}
 		#load-more {
@@ -60,8 +49,6 @@
 	}
 	#work {
 		#adaptive-design-grid-figure {
-			.cols(4);
-			.gutters-height(14);
 			margin-top: 0;
 		}
 		h3, .text {
@@ -74,9 +61,6 @@
 			.cols-outer(4);
 			h3, h4, p {
 				.cols(4);
-			}
-			.portrait {
-				.cols(3);
 			}
 			.btn {
 				.cols(1);
@@ -99,10 +83,9 @@
 		}
 	}	
 	footer {
-		.logo {
-			.cols(4);
-			margin-top: -@gutter;
-			height: 144px;
+		#logo {
+		 .cols-left(1);
+		 .cols-right(1);
 		}
 		.text {
 			.cols(5);
@@ -115,7 +98,7 @@
 	#cases {
 		.case {
 			&:nth-child(odd) {
-				.cols-left(1);
+				.cols-outer-left(1);
 			}
 		}
 	}	
