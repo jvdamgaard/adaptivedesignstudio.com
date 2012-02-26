@@ -8,12 +8,14 @@
 	h1 {.h2; font-weight: 700;}
 	.bordered {
 		margin-top: 4*@gutter;
-		padding: @gutter*7/4 0 2*@gutter - 1px 0;
 		h2 {
 			.cols(12);
 			.gutters-height(2);
-			.icon {
-				height: 2*@gutter;
+			padding-left: @gutter*2.5;
+			&:before {
+				.pictos();
+				font-size: 2*@gutter;
+				line-height: 2*@gutter;
 			}
 		}
 	}
@@ -24,39 +26,24 @@
 		h1, p {
 			.cols(8);
 		}
-		h1 {
-			#logo {
-				height: 21px;
-				width: 21px;
-			}
-		}
 		p {
 			.h4;
 			margin-bottom: 0;
 		}
 	}
 	#adaptive-design {
-		#adaptive-design-figure {
-			.cols(8);
-			.gutters-height(7);
-		}
 		#adaptive-design-description, #get-started {
 			.cols(4);
 			float: right;
 		}
 	}
 	#cases {
-		.case {
-			.cols(4);
-		}
 		#load-more {
 			.cols-left(8);
 		}
 	}
 	#work {
 		#adaptive-design-grid-figure {
-			.cols(5);
-			.gutters-height(9);
 			margin-top: 2*@gutter;
 		}
 		h3, .text {
@@ -71,8 +58,6 @@
 				.cols(6);
 			}
 			.portrait {
-				.cols(6);
-				.gutters-height(14);
 				margin-bottom: @gutter;
 			}
 			.btn {
@@ -85,22 +70,24 @@
 			.cols(12);
 		}
 		#hire-us {
+			.cols-outer(12);
+			h3, p {
+				.cols(8);
+			}
 			#contact-get-started {
-				.cols-width(3);
+				.cols(4);
 			}
 		}
-		#hire-us, #follow, #email, #location {
-			.cols(3);
+		#follow, #email, #location {
+			.cols(4);
 		}
 	}	
 	footer {
 		padding-top: 2*@gutter;
 		padding-bottom: @gutter;
-		.logo {
-			.cols(4);
+		#logo {
 			.cols-left(1);
-			.cols-right(1);
-			.gutters-height(8);
+			.cols-right(2);
 			margin-top: -2*@gutter;
 			margin-bottom: -@gutter;
 		}

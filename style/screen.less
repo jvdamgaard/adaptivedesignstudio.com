@@ -6,6 +6,9 @@
 @media screen and (min-width: 1120px) {
 
 	h1 {.h1; font-weight: 700;}
+	.bordered {
+		padding: @gutter*13/8 0 2*@gutter - 1px 0;
+	}
 	header { 
 		#firm-description {
 			.cols-outer(10);
@@ -13,86 +16,69 @@
 		h1, p {
 			.cols(10);
 		}
-		h1 {
-			#logo {
-				height: 27px;
-				width: 27px;
-			}
-		}
-	}
-	#adaptive-design {
-		#adaptive-design-figure {
-			.cols(10);
-		}
 	}
 	#cases {
 		.case {
 			.cols-left(1);
-			&:nth-child(3n-1) {
-				.cols-left(0);
+			.picture {
+				background-position: 0px 0px;
+				&#psykologviskum {
+					background-image: url('../img/cases/psykologviskum-284x180-bw.jpg');
+				}
+				&#metteomaibom {
+					background-image: url('../img/cases/metteomaibom-284x180-bw.jpg');
+				}
+				img {
+					.opacity(0);
+				}
+			}
+			&:hover {
+				.picture {
+					img {
+						.opacity(1);
+						.easy-transition(0.5s);
+					}
+				}
 			}
 		}
 		#load-more {
-			.cols-left(8);
+			.cols-left(10);
 		}
 	}
 	#work {
-		#adaptive-design-grid-figure {
-			.cols(5);
-			.gutters-height(9);
-			margin-top: 2*@gutter;
-		}
 		h3, .text {
-			.cols(7);
+			.cols(8);
 			float: right;
 		}
 	}
 	#about {
 		.profile {
-			.cols-outer(6);
-			&:nth-child(odd) {
-				.cols-outer-left(0);
-			}
-			h3, h4, p {
-				.cols(6);
-			}
-			.portrait {
-				.cols(6);
-				.gutters-height(14);
-				margin-bottom: @gutter;
-			}
+			.cols-outer-left(2);
 			.btn {
-				.cols(1);
+				.cols(2);
 			}
 		}
 	}
 	#contact {
 		#tagline {
-			.cols(12);
+			.cols(14);
 		}
 		#hire-us {
+			.cols(5);
+			h3, p, #contact-get-started {
+				.cols-reset();
+			}
 			#contact-get-started {
-				.cols-width(3);
+				.cols-width(5);
 			}
 		}
-		#hire-us, #follow, #email, #location {
+		#follow, #email, #location {
 			.cols(3);
 		}
 	}	
 	footer {
-		padding-top: 2*@gutter;
-		padding-bottom: @gutter;
-		.logo {
-			.cols(4);
-			.cols-left(1);
-			.cols-right(1);
-			.gutters-height(8);
-			margin-top: -2*@gutter;
-			margin-bottom: -@gutter;
-		}
-		.text {
-			.cols(5);
-			.cols-right(1);
+		#logo {
+			.cols-left(2);
 		}
 	}
 }
@@ -103,6 +89,13 @@
 		.case {
 			&:nth-child(3n-1) {
 				.cols-left(0);
+			}
+		}
+	}
+	#about {
+		.profile {
+			&:nth-child(even) {
+				.cols-outer-left(0);
 			}
 		}
 	}

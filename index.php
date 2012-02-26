@@ -64,6 +64,8 @@ to the users need.">
 		<source src="img/adaptive-design-figure-296x72.png" />
 		<source src="img/adaptive-design-figure-456x120.png" media="min-width: 480px" />
 		<source src="img/adaptive-design-figure-376x96.png" media="min-width: 720px" />
+		<source src="img/adaptive-design-figure-616x120.png" media="min-width: 960px" />
+		<source src="img/adaptive-design-figure-776x146.png" media="min-width: 1120px" />
 		<!-- Fallback content -->
 		<img src="img/adaptive-design-figure-296x72.png" />
 	</picture>
@@ -108,6 +110,7 @@ to the users need.">
 			<source src="img/adaptive-grid-system-296x144.png" />
 			<source src="img/adaptive-grid-system-456x144.png" media="min-width: 480px" />
 			<source src="img/adaptive-grid-system-296x144.png" media="min-width: 720px" />
+			<source src="img/adaptive-grid-system-376x216.png" media="min-width: 960px" />
 			<!-- Fallback -->
 			<img src="img/adaptive-grid-system-296x144.png" />
 		</picture>
@@ -129,6 +132,7 @@ to the users need.">
 			<source src="img/logo-black-216x192.png" />
 			<source src="img/logo-black-296x192.png" media="min-width: 480px" />
 			<source src="img/logo-black-216x192.png" media="min-width: 720px" />
+			<source src="img/logo-black-456x336.png" media="min-width: 960px" />
 			<!-- Fallback content -->
 			<img src="img/logo-black-216x192.png" />
 		</picture>
@@ -146,6 +150,7 @@ to the users need.">
 			<source src="img/jvd-216x192.jpg" />
 			<source src="img/jvd-296x192.jpg" media="min-width: 480px" />
 			<source src="img/jvd-216x192.jpg" media="min-width: 720px" />
+			<source src="img/jvd-456x336.jpg" media="min-width: 960px" />
 			<!-- Fallback content -->
 			<img src="img/jvd-216x192.jpg" />
 		</picture>
@@ -190,6 +195,7 @@ to the users need.">
 	<picture id="logo">
 		<source src="img/logo-56x56.png" />
 		<source src="img/logo-136x144.png" media="min-width: 480px" />
+		<source src="img/logo-216x192.png" media="min-width: 960px" />
 		<!-- Fallback content -->
 		<img src="img/logo-56x56.png" />
 	</picture>
