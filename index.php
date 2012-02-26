@@ -195,17 +195,23 @@ to the users need.">
 
 </div>
 
-	<!-- Async load -->
-    <script>
-    	window._gaq = [['_setAccount','UA-29383798-1'],['_trackPageview'],['_trackPageLoadTime']];
-        Modernizr.load({ load: [ 
-			"lib/js/jquery.min.js", 
-			"lib/js/adaptiveimages.polyfill.src.js", 
-			"lib/js/grid.min.js",
-			"js/functions.js",
-			('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-		] });
-	</script>
+<!-- Async load -->
+<script>
+	window._gaq = [['_setAccount','UA-29383798-1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({ load: [ 
+		"//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", 
+		"lib/js/adaptiveimages.polyfill.min.js", 
+		"js/functions.js",
+		('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+	] });
+</script>
+
+<!-- Display grid under development -->
+<script>
+    Modernizr.load({ load: [  
+		"lib/js/grid.min.js"
+	] });
+</script><!-- -->
 	
 </body>
 
