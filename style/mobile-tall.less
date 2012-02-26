@@ -124,26 +124,12 @@
 				.rounded(2px);
 				border: @gutter/4 solid @color-font;
 				overflow: hidden;
-				background-position: 0px 0px;
-				&#psykologviskum {
-					background-image: url('../img/cases/psykologviskum-284x180-bw.jpg');
-				}
-				&#metteomaibom {
-					background-image: url('../img/cases/metteomaibom-284x180-bw.jpg');
-				}
-				img {
-					.opacity(0);
-				}
 			}
 			&:hover {
 				color: @color-font;
 				text-decoration: underline;
 				.picture {
 					.drop-shadow(0px, 1px, 2px, 0px, 0.2);
-					img {
-						.opacity(1);
-						.easy-transition(0.5s);
-					}
 				}
 			}
 		}
