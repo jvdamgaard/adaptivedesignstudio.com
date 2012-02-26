@@ -1,0 +1,204 @@
+/*
+	Showing Adaptive Grid System in development
+	used with adaptivegridsystem.min.js
+	and adaptive-grid-system.less
+-------------------------------------------------------------------------------*/
+
+/* Show grid: for development */
+#showgrid {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	display: none;
+	.opacity(0);
+	z-index: 10;
+	.allGrids {
+		height: 100%;
+		width: 40 * ( @column + @gutter );
+		margin-left: -40 * ( @column + @gutter ) / 2;
+		position: absolute;
+		left: 50%;
+		.col {
+			.cols;
+			min-height: 100%;
+			margin-bottom: 0px;
+			margin-top: 0px;
+			background-color: @color;
+			.opacity(0.25);
+			.easy-transition();
+			&:nth-child(even) {
+				float: right;
+			}
+		}
+	}
+	.gutters {
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+		position: absolute;
+		.gutter {
+			.gutters-height;
+			display: block;
+			width: 100%;
+			border-bottom: 1px dotted @color-background;
+		}
+	}
+}
+
+.show-grid-active #showgrid {
+	display: block;
+	.opacity(1);
+	.easy-transition();
+}
+
+#grid_description {
+	position: fixed;
+	top: @gutter/2;
+	right: 2*@gutter;
+	div {
+		.small;
+		color: @color-background;
+		background: @color;
+		padding: 0 @gutter/2;
+		display: none;
+	}
+}
+
+.fold {
+	position: absolute;
+	border-top: dashed @color 1px;
+	width: 100%;
+	overflow: visible;
+	top: -99px;
+	p {
+		.small;
+		color: @color-background;
+		background: @color;
+		margin-top: -@gutter/2;
+		position: absolute;
+		padding: 0 @gutter/2;
+	}
+}
+
+#toggle {
+	display: none;
+	position: fixed;
+	top: @gutter/2;
+	right: @gutter/2;
+	width: @gutter;
+	height: @gutter;
+	z-index: 100;
+	cursor: pointer;
+	div {
+		width: 25%;
+		margin-right: 12.5%;
+		background: @color-font;
+		height: 100%;
+		float: left;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&:hover div {
+		background: @color;
+		.drop-shadow;
+	}
+}
+
+.show-grid-active #toggle div {
+	width: 100%;
+	margin-right: 0;
+	height: 25%;
+	margin-bottom: 12.5%;
+	float: left;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* Mobile tall */
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	#showgrid .allGrids .col:nth-last-child(n+5) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#grid_description div.mobile { 
+		display: block; 
+	}
+	.fold { 
+		top: 480px; 
+	}
+}
+/* Mobile wide */
+@media screen and (min-width: 480px) and (max-width: 719px) { 
+	#showgrid .allGrids .col:nth-last-child(n+7) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#grid_description div.mobile-wide { 
+		display: block; 
+	}
+	.fold { 
+		top: 320px; 
+	}
+}
+/* Tablet tall */
+@media screen and (min-width: 720px) and (max-width: 959px) { 
+	#showgrid .allGrids .col:nth-last-child(n+10) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#showgrid .allGrids {
+		margin-left: 0px - ( 41 * ( @column + @gutter ) / 2 );
+	}
+	#grid_description div.tablet { 
+		display: block; 
+	}
+	.fold { 
+		top: 950px; 
+	}
+}
+/* Tablet wide */
+@media screen and (min-width: 960px) and (max-width: 1119px) { 
+	#showgrid .allGrids .col:nth-last-child(n+13) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#grid_description div.tablet-wide { 
+		display: block; 
+	}
+	.fold { 
+		top: 700px; 
+	}
+}
+/* Screen */
+@media screen and (min-width: 1120px) and (max-width: 1839px) { 
+	#showgrid .allGrids .col:nth-last-child(n+15) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#grid_description div.screen { 
+		display: block; 
+	}
+	.fold { 
+		top: 680px; 
+	}
+}
+/* Screen wide */
+@media screen and (min-width: 1840px) { 
+	#showgrid .allGrids .col:nth-last-child(n+24) {
+		.opacity(0.05);
+		.easy-transition();
+	}
+	#showgrid .allGrids {
+		margin-left: 0px - ( 41 * ( @column + @gutter ) / 2 );
+	}
+	#grid_description div.screen-wide { 
+		display: block; 
+	}
+	.fold { 
+		top: 1080px; 
+	}
+}
