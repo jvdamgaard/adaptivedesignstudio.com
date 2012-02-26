@@ -125,7 +125,7 @@ to the users need.">
 			<source src="img/logo-black-216x192.png" />
 			<source src="img/logo-black-296x192.png" media="min-width: 480px" />
 			<!-- Fallback content -->
-			<img src="img/logo-black-216x192.pngg" />
+			<img src="img/logo-black-216x192.png" />
 		</picture>
         <a href="https://twitter.com/#!/adaptivedesignstudio" target="_blank" class="btn twitter" title="@adaptivedesignstudio"></a>
         <a href="http://linkedin.com" target="_blank" class="btn linkedin" title="Adaptive Design Studio @ LinkedIn"></a>
@@ -187,7 +187,6 @@ to the users need.">
 		<!-- Fallback content -->
 		<img src="img/logo-56x56.png" />
 	</picture>
-	<figure class="sprite-adaptive logo"></figure>
     <p class="text">This site is © Adaptive Design Studio 2012 and all our work is  licensed under <a href="#">MIT</a>. The typeface used is <a href="#">FF Dagny</a>, served via Typekit. Javascript powered by <a href="#">jQuery</a>, CSS by <a href="#">LESS</a> and CMS by <a href="#">ProcessWire</a>.</p>
 </footer>
 
