@@ -1,39 +1,40 @@
 /* 	----------------------------------------------------------
-	style.less
+	Style
 	by Adaptive Design Studio
 	v 1.0.0 */
 
 /* 	Settings for this site */
-@import 'settings';
+@import "settings";
 
 /* 	Normalize, grid and mixins */
-@import '../lib/style/css3';
-@import '../lib/style/mixins';
-@import '../lib/style/normalize';
-@import '../lib/style/adaptive-grid-system';
-@import '../lib/style/defaults';
-@import '../lib/style/buttons';
+@import "../lib/style/css3";
+@import "../lib/style/mixins";
+@import "../lib/style/normalize";
+@import "../lib/style/adaptive-grid-system";
+@import "../lib/style/defaults";
+@import "../lib/style/buttons";
 @import "../lib/style/helpers";
 @import "../lib/style/font.pictos";
 
 /* 	Variables */
-@import 'variables';
+@import "variables";
 
 /* 	Mixins */
-@import 'mixins';
+@import "mixins";
 
-/* 	MEDIA QUEREIES
+/* 	Media queries
 	mobile-first: lukew.com/ff/entry.asp?933
 	responsive design: alistapart.com/articles/responsive-web-design */
-
-@import 'mobile-tall.less';
-@import 'mobile-wide.less';
-@import 'tablet-tall.less';
-@import 'tablet-wide.less';
-@import 'screen.less';
-@import 'screen-wide.less';
 @import "oldies";
+@import "mobile-tall";
+@import "mobile-wide";
+@import "tablet-tall";
+@import "tablet-wide";
+@import "screen";
+@import "screen-wide";
 
 /* Print */
-@import "../lib/style/print.less";/* Only for development */
+@import "../lib/style/print";
+
+/* Only for development */
 @import "../lib/style/adaptive-grid-system-development";
