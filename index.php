@@ -199,7 +199,7 @@ to the users need.">
 		<!-- Fallback content -->
 		<img src="img/logo-56x56.png" />
 	</picture>
-    <p class="text">This site is © Adaptive Design Studio 2012 and all our work is  licensed under <a href="#">MIT</a>. The typeface used is <a href="#">FF Dagny</a>, served via Typekit. Javascript powered by <a href="#">jQuery</a>, CSS by <a href="#">LESS</a> and CMS by <a href="#">ProcessWire</a>.</p>
+    <p class="text">This site is © Adaptive Design Studio 2012 and all our work is  licensed under <a href="#">MIT</a>. The typeface used is <a href="#">FF Dagny</a>, served via Typekit and icons is <a href="http://pictos.cc/">Pictos</a> served via Pictos Server. Javascript powered by <a href="#">jQuery</a> and CSS by <a href="#">LESS</a>.</p>
 </footer>
 
 </div>
