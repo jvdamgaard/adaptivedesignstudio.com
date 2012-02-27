@@ -32,6 +32,8 @@
 	width: @cols * ( @column + @gutter );
 	float: left;
 	display: block;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 // Margin left for outer cols
@@ -57,7 +59,8 @@
 .cols-reset() {
 	width: auto;
 	float: none;
-	margin: 0;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .dimension(@x, @y) {
