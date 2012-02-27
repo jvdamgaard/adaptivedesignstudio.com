@@ -146,24 +146,21 @@
 		h2:before {
 			content: 'g';
 		}
-		#adaptive-design-grid-figure {
-			.cols();
-			width: auto;
-		}
-		h3, .text {
-			.cols(4);
-		}
 		.works {
 			.clearfix();
 			margin-top: @gutter;
 			&:first-child {
 				margin-top: 0px;
 			}
-		}
-		#adaptive-design-grid-figure {
-			margin-top: @gutter;
-			margin-bottom: @gutter;
-			.gutters-height(6);		
+			h3, .text {
+				.cols(4);
+			}
+			.picture {
+				.cols();
+				width: auto;
+				margin-top: @gutter;
+				margin-bottom: @gutter;
+			}
 		}
 	}
 	#about {

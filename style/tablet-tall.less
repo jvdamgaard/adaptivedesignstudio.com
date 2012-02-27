@@ -4,7 +4,7 @@
 	
 /* Styles for tablet tall and above */
 @media screen and (min-width: 720px) {
-	h1 { .h3; text-transform: uppercase; font-weight: 700;}
+	h1 { .h3; font-weight: 700;}
 	.bordered {
 		margin-bottom: 2*@gutter;
 		margin-top: 3*@gutter;
@@ -48,9 +48,11 @@
 		}
 	}
 	#work {
-		h3, .text {
-			.cols(5);
-			float: right;
+		.works {
+			h3, .text {
+				.cols(5);
+				float: right;
+			}
 		}
 	}
 	#about {

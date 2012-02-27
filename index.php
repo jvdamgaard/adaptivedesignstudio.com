@@ -105,15 +105,32 @@ to the users need.">
         <h2>Work</h2>
     </div>
     <div id="adaptive-design-grid" class="works">
-    	<h3>Adaptive Design Grid</h3>
-		<picture id="adaptive-design-grid-figure">
+    	<h3><a href="/adaptivegridsystem/">Adaptive Design Grid</a></h3>
+		<a href="/adaptivegridsystem/"><picture class="picture">
 			<source src="img/adaptive-grid-system-296x144.png" />
 			<source src="img/adaptive-grid-system-456x144.png" media="min-width: 480px" />
 			<source src="img/adaptive-grid-system-296x144.png" media="min-width: 720px" />
 			<source src="img/adaptive-grid-system-376x216.png" media="min-width: 960px" />
+			<source src="img/adaptive-grid-system-456x216.png" media="min-width: 1120px" />
 			<!-- Fallback -->
 			<img src="img/adaptive-grid-system-296x144.png" />
-		</picture>
+		</picture></a>
+        <div class="text">
+            <p><span class="highlighted">Lorem ipsum dolor sit</span>  amet, consectetur adipiscing elit. Sed eu orci eros, sed dapibus arcu. Nulla facilisi. Nulla in neque elit, non cursus eros. Duis feugiat diam quam, in sodales purus. Nullam justo justo, auctor et tincidunt ut, placerat nec turpis. Donec id tortor vel tortor aliquam interdum id ut nulla.</p>
+            <p>Vestibulum sed facilisis nibh. Praesent consectetur diam non metus rutrum ac hendrerit leo cursus. Phasellus rutrum, orci sed tincidunt pharetra, risus urna dignissim nisl, a ornare velit orci tristique nisi. Curabitur facilisis libero sed dolor pellentesque nec faucibus metus vehicula.</p>
+        </div>
+    </div>
+    <div id="responsive-images-polyfill" class="works">
+    	<h3><a href="/responsiveimagespolyfill/">Responsive Images Polyfill</a></h3>
+		<a href="/responsiveimagespolyfill/"><picture class="picture">
+			<source src="img/adaptive-grid-system-296x144.png" />
+			<source src="img/adaptive-grid-system-456x144.png" media="min-width: 480px" />
+			<source src="img/adaptive-grid-system-296x144.png" media="min-width: 720px" />
+			<source src="img/adaptive-grid-system-376x216.png" media="min-width: 960px" />
+			<source src="img/adaptive-grid-system-456x216.png" media="min-width: 1120px" />
+			<!-- Fallback -->
+			<img src="img/adaptive-grid-system-296x144.png" />
+		</picture></a>
         <div class="text">
             <p><span class="highlighted">Lorem ipsum dolor sit</span>  amet, consectetur adipiscing elit. Sed eu orci eros, sed dapibus arcu. Nulla facilisi. Nulla in neque elit, non cursus eros. Duis feugiat diam quam, in sodales purus. Nullam justo justo, auctor et tincidunt ut, placerat nec turpis. Donec id tortor vel tortor aliquam interdum id ut nulla.</p>
             <p>Vestibulum sed facilisis nibh. Praesent consectetur diam non metus rutrum ac hendrerit leo cursus. Phasellus rutrum, orci sed tincidunt pharetra, risus urna dignissim nisl, a ornare velit orci tristique nisi. Curabitur facilisis libero sed dolor pellentesque nec faucibus metus vehicula.</p>
