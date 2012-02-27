@@ -116,8 +116,8 @@ to the users need.">
 			<img src="img/adaptive-grid-system-296x144.png" />
 		</picture></a>
         <div class="text">
-            <p><span class="highlighted">Lorem ipsum dolor sit</span>  amet, consectetur adipiscing elit. Sed eu orci eros, sed dapibus arcu. Nulla facilisi. Nulla in neque elit, non cursus eros. Duis feugiat diam quam, in sodales purus. Nullam justo justo, auctor et tincidunt ut, placerat nec turpis. Donec id tortor vel tortor aliquam interdum id ut nulla.</p>
-            <p>Vestibulum sed facilisis nibh. Praesent consectetur diam non metus rutrum ac hendrerit leo cursus. Phasellus rutrum, orci sed tincidunt pharetra, risus urna dignissim nisl, a ornare velit orci tristique nisi. Curabitur facilisis libero sed dolor pellentesque nec faucibus metus vehicula.</p>
+            <p><span class="highlighted">Everybody wants <a href="http://www.alistapart.com/articles/responsive-web-design/">responsive webdesign</a></span>, but fluid grids are not a designers best choice. The fixed <a href="http://960.gs/" target="_blank">960 gridsystem</a> has been the ruler for quite some time but the increasing amount of web desices have demanded a more responsive approach.</p>
+            <p>The middelroad between fixed gridsystemts and responsive design is adaptive design with numerous fixed grids based on the device width. <a href="/adaptivegridsystem/">Adaptive Grid System</a> is a framework ready fro making adaptive design from small smartphones to huge screens.</p>
         </div>
     </div>
     <div id="responsive-images-polyfill" class="works">
@@ -132,8 +132,8 @@ to the users need.">
 			<img src="img/adaptive-grid-system-296x144.png" />
 		</picture></a>
         <div class="text">
-            <p><span class="highlighted">Lorem ipsum dolor sit</span>  amet, consectetur adipiscing elit. Sed eu orci eros, sed dapibus arcu. Nulla facilisi. Nulla in neque elit, non cursus eros. Duis feugiat diam quam, in sodales purus. Nullam justo justo, auctor et tincidunt ut, placerat nec turpis. Donec id tortor vel tortor aliquam interdum id ut nulla.</p>
-            <p>Vestibulum sed facilisis nibh. Praesent consectetur diam non metus rutrum ac hendrerit leo cursus. Phasellus rutrum, orci sed tincidunt pharetra, risus urna dignissim nisl, a ornare velit orci tristique nisi. Curabitur facilisis libero sed dolor pellentesque nec faucibus metus vehicula.</p>
+            <p><span class="highlighted">How do we handle images i responsive webdesign?</span> This is a question attracting <a href="https://github.com/filamentgroup/Responsive-Images" target="blank">lots</a> and <a href="http://adaptive-images.com/" target="_blank">lots</a> of attention. There <a href="http://www.alistapart.com/articles/responsive-images-how-they-almost-worked-and-what-we-need/" target="_blank">aren't any really good solutions</a> so far. So what do we do?</p>
+            <p>Html5 to the rescue - or is it so. The new <a href="http://dev.w3.org/html5/spec/Overview.html#the-video-element" target="_blank">video tag</a> in html5 have options for editing the src based on media-queries. The old <a href="http://www.w3.org/TR/html401/struct/objects.html#h-13.2" target="_blank">img tag</a> can't handle media queries, so a <a href="http://www.w3.org/community/respimg/" target="_blank">proposal for a new picture tag</a> has been made. Let's embrace that request. <a href="/responsiveimagespolyfill/">Responsive Images Polyfill</a> is a javascript polyfill making responsive images possible using the picture tag.</p>
         </div>
     </div>
 </article>
