@@ -97,6 +97,15 @@ to the users need.">
 			<img src="img/cases/metteomaibom-284x180.jpg" />
 		</picture>
 		Mette O. Maibom</a>
+	<a href="http://malereskildsen.dk" target="_blank" class="case">
+	    <picture class="picture" id="malereskildsen">
+			<source src="img/cases/malereskildsen-4x8.jpg" />
+			<source src="img/cases/malereskildsen-3x8.jpg" media="min-width: 480px" />
+			<source src="img/cases/malereskildsen-4x8.jpg" media="min-width: 720px" />
+			<!-- Fallback content -->
+			<img src="img/cases/malereskildsen-4x8.jpg" />
+		</picture>
+		Mette O. Maibom</a>
     <a href="#" id="load-more" class="btn">Load more</a>
 </article>
 
