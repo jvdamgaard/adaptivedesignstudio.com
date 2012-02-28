@@ -61,13 +61,13 @@ to the users need.">
 <div id="adaptive-design">
 	
 	<picture id="adaptive-design-figure">
-		<source src="img/adaptive-design-figure-296x72.png" />
-		<source src="img/adaptive-design-figure-456x120.png" media="min-width: 480px" />
-		<source src="img/adaptive-design-figure-376x96.png" media="min-width: 720px" />
-		<source src="img/adaptive-design-figure-616x120.png" media="min-width: 960px" />
-		<source src="img/adaptive-design-figure-776x146.png" media="min-width: 1120px" />
+		<source src="img/adaptive-design-figure-4x3.png" />
+		<source src="img/adaptive-design-figure-6x5.png" media="min-width: 480px" />
+		<source src="img/adaptive-design-figure-5x4.png" media="min-width: 720px" />
+		<source src="img/adaptive-design-figure-8x5.png" media="min-width: 960px" />
+		<source src="img/adaptive-design-figure-10x7.png" media="min-width: 1120px" />
 		<!-- Fallback content -->
-		<img src="img/adaptive-design-figure-296x72.png" />
+		<img src="img/adaptive-design-figure-4x3.png" />
 	</picture>
 	
     <p id="adaptive-design-description"><span class="highlighted">We specialize</span> in building websites that are just as brilliant for mobile as they are for the desktop. Contact us to learn how we can make your website adapt to the users need.</p>
@@ -80,21 +80,21 @@ to the users need.">
     </div>
     <a href="http://psykologviskum.dk" target="_blank" class="case">
     	<picture class="picture" id="psykologviskum">
-			<source src="img/cases/psykologviskum-284x180.jpg" />
-			<source src="img/cases/psykologviskum-204x180.jpg" media="min-width: 480px" />
-			<source src="img/cases/psykologviskum-284x180.jpg" media="min-width: 720px" />
+			<source src="img/cases/psykologviskum-4x8.jpg" />
+			<source src="img/cases/psykologviskum-3x8.jpg" media="min-width: 480px" />
+			<source src="img/cases/psykologviskum-4x8.jpg" media="min-width: 720px" />
 			<!-- Fallback content -->
-			<img src="img/cases/psykologviskum-284x180.jpg" />
+			<img src="img/cases/psykologviskum-4x8.jpg" />
 		</picture>
     	Psykolog Birgitte Viskum
 	</a>
     <a href="http://metteomaibom.dk" target="_blank" class="case">
     	<picture class="picture" id="metteomaibom">
-			<source src="img/cases/metteomaibom-284x180.jpg" />
-			<source src="img/cases/metteomaibom-204x180.jpg" media="min-width: 480px" />
-			<source src="img/cases/metteomaibom-284x180.jpg" media="min-width: 720px" />
+			<source src="img/cases/metteomaibom-4x8.jpg" />
+			<source src="img/cases/metteomaibom-3x8.jpg" media="min-width: 480px" />
+			<source src="img/cases/metteomaibom-4x8.jpg" media="min-width: 720px" />
 			<!-- Fallback content -->
-			<img src="img/cases/metteomaibom-284x180.jpg" />
+			<img src="img/cases/metteomaibom-4x8.jpg" />
 		</picture>
 		Mette O. Maibom</a>
 	<a href="http://malereskildsen.dk" target="_blank" class="case">
@@ -116,13 +116,13 @@ to the users need.">
     <div id="adaptive-design-grid" class="works">
     	<h3><a href="/adaptivegridsystem/">Adaptive Design Grid</a></h3>
 		<a href="/adaptivegridsystem/"><picture class="picture">
-			<source src="img/adaptive-grid-system-296x144.png" />
-			<source src="img/adaptive-grid-system-456x144.png" media="min-width: 480px" />
-			<source src="img/adaptive-grid-system-296x144.png" media="min-width: 720px" />
-			<source src="img/adaptive-grid-system-376x216.png" media="min-width: 960px" />
-			<source src="img/adaptive-grid-system-456x216.png" media="min-width: 1120px" />
+			<source src="img/adaptive-grid-system-4x6.png" />
+			<source src="img/adaptive-grid-system-6x6.png" media="min-width: 480px" />
+			<source src="img/adaptive-grid-system-4x11.png" media="min-width: 720px" />
+			<source src="img/adaptive-grid-system-5x9.png" media="min-width: 960px" />
+			<source src="img/adaptive-grid-system-6x9.png" media="min-width: 1120px" />
 			<!-- Fallback -->
-			<img src="img/adaptive-grid-system-296x144.png" />
+			<img src="img/adaptive-grid-system-4x6.png" />
 		</picture></a>
         <div class="text">
             <p><span class="highlighted">Everybody wants <a href="http://www.alistapart.com/articles/responsive-web-design/">responsive webdesign</a></span>, but fluid grids are not a designers best choice. The fixed <a href="http://960.gs/" target="_blank">960 gridsystem</a> has been the ruler for quite some time but the increasing amount of web desices have demanded a more responsive approach.</p>
@@ -155,12 +155,12 @@ to the users need.">
     	<h3>Our story</h3>
         <h4>Where it all started</h4>
         <picture class="portrait">
-			<source src="img/logo-black-216x192.png" />
-			<source src="img/logo-black-296x192.png" media="min-width: 480px" />
-			<source src="img/logo-black-216x192.png" media="min-width: 720px" />
-			<source src="img/logo-black-456x336.png" media="min-width: 960px" />
+			<source src="img/logo-black-3x8.png" />
+			<source src="img/logo-black-4x8.png" media="min-width: 480px" />
+			<source src="img/logo-black-3x8.png" media="min-width: 720px" />
+			<source src="img/logo-black-6x14.png" media="min-width: 960px" />
 			<!-- Fallback content -->
-			<img src="img/logo-black-216x192.png" />
+			<img src="img/logo-black-3x8.png" />
 		</picture>
         <a href="https://twitter.com/#!/adaptivedesignstudio" target="_blank" class="btn twitter" title="@adaptivedesignstudio"></a>
         <a href="http://linkedin.com" target="_blank" class="btn linkedin" title="Adaptive Design Studio @ LinkedIn"></a>
@@ -173,10 +173,10 @@ to the users need.">
     	<h3>Jakob Viskum Damgaard</h3>
         <h4>Founder, designer and developer</h4>
         <picture class="portrait">
-			<source src="img/jvd-216x192.jpg" />
-			<source src="img/jvd-296x192.jpg" media="min-width: 480px" />
-			<source src="img/jvd-216x192.jpg" media="min-width: 720px" />
-			<source src="img/jvd-456x336.jpg" media="min-width: 960px" />
+			<source src="img/jvd-3x8.jpg" />
+			<source src="img/jvd-4x8.jpg" media="min-width: 480px" />
+			<source src="img/jvd-3x8.jpg" media="min-width: 720px" />
+			<source src="img/jvd-6x14.jpg" media="min-width: 960px" />
 			<!-- Fallback content -->
 			<img src="img/jvd-216x192.jpg" />
 		</picture>
