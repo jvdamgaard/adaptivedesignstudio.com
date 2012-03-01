@@ -132,13 +132,13 @@ to the users need.">
     <div id="responsive-images-polyfill" class="works">
     	<h3><a href="/responsiveimagespolyfill/">Responsive Images Polyfill</a></h3>
 		<a href="/responsiveimagespolyfill/"><picture class="picture">
-			<source src="img/adaptive-grid-system-296x144.png" />
-			<source src="img/adaptive-grid-system-456x144.png" media="min-width: 480px" />
-			<source src="img/adaptive-grid-system-296x144.png" media="min-width: 720px" />
-			<source src="img/adaptive-grid-system-376x216.png" media="min-width: 960px" />
-			<source src="img/adaptive-grid-system-456x216.png" media="min-width: 1120px" />
+			<source src="img/adaptive-grid-system-4x6.png" />
+			<source src="img/adaptive-grid-system-6x6.png" media="min-width: 480px" />
+			<source src="img/adaptive-grid-system-4x11.png" media="min-width: 720px" />
+			<source src="img/adaptive-grid-system-5x9.png" media="min-width: 960px" />
+			<source src="img/adaptive-grid-system-6x9.png" media="min-width: 1120px" />
 			<!-- Fallback -->
-			<img src="img/adaptive-grid-system-296x144.png" />
+			<img src="img/adaptive-grid-system-4x6.png" />
 		</picture></a>
         <div class="text">
             <p><span class="highlighted">How do we handle images i responsive webdesign?</span> This is a question attracting <a href="https://github.com/filamentgroup/Responsive-Images" target="blank">lots</a> and <a href="http://adaptive-images.com/" target="_blank">lots</a> of attention. There <a href="http://www.alistapart.com/articles/responsive-images-how-they-almost-worked-and-what-we-need/" target="_blank">aren't any really good solutions</a> so far. So what do we do?</p>
@@ -178,7 +178,7 @@ to the users need.">
 			<source src="img/jvd-3x8.jpg" media="min-width: 720px" />
 			<source src="img/jvd-6x14.jpg" media="min-width: 960px" />
 			<!-- Fallback content -->
-			<img src="img/jvd-216x192.jpg" />
+			<img src="img/jvd-3x8.jpg" />
 		</picture>
         <a href="https://twitter.com/#!/jvdamgaard" target="_blank" class="btn twitter" title="@jvdamgaard"></a>
         <a href="http://www.linkedin.com/profile/view?id=165828189" target="_blank" class="btn linkedin" title="Jakob Viskum Damgaard @ LinkedIn"></a>
