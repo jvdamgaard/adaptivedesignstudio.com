@@ -1,0 +1,52 @@
+/*
+	SETTINGS
+	Version 1.0.0
+-------------------------------------------------------------------------------*/
+
+/*	COLORS
+	Use http://colorschemedesigner.com/ forcreating color schemes */
+	
+	@color-font: #424242;
+	
+	@color-background: #FFF;
+	@color-background-1: darken(@color-background,10%);
+	@color-background-2: darken(@color-background,20%);
+	
+	@color: #E84C38;
+	@color-1: #F5D82C;
+	@color-2: #000000;
+	@color-3: #972212;
+
+/*	FONTS STACKS
+	Use typekit or @fontface
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ 
+	Use http://onlinefontconverter.com/ to convert fonts */
+
+	/* Font family for h1, h2, h3 and h4 headers */
+	.font-header() {
+		font-family: "ff-dagny-web-pro",sans-serif;
+		font-style: normal;
+		font-weight: 500;
+	}
+	
+	/* Font family for body text */
+	.font-body() {
+		font-family: "ff-dagny-web-pro",sans-serif;
+		font-style: normal;
+		font-weight: 500;
+	}
+
+
+/*	FONT SIZE */
+
+	/* Base font-size */
+	@base-size: 16px;
+
+
+/*	GRID */
+
+	/* The column-width of your grid in pixels */
+	@column: 56px;
+	
+	/* The gutter-width of your grid in pixels */ 
+	@gutter: 24px;
