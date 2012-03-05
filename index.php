@@ -236,7 +236,7 @@ to the users need.">
 	window._gaq = [['_setAccount','UA-29383798-1'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({ load: [  
 		"lib/js/adaptiveimages.polyfill.min.js", 
-		//"//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
+		"//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
 		//"js/functions.js",
 		('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
 	] });
