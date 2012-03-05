@@ -219,11 +219,12 @@ to the users need.">
 
 <footer>
 	<picture id="logo">
-		<source src="img/logo-56x56.png" />
-		<source src="img/logo-136x144.png" media="screen and (min-width: 480px)" />
-		<source src="img/logo-216x192.png" media="screen and (min-width: 960px)" />
+		<source src="img/logo-1x.png" />
+		<source src="img/logo-2x.png" media="screen and (min-width: 480px)" />
+		<source src="img/logo-4x7.png" media="screen and (min-width: 720px)" />
+		<source src="img/logo-3x9.png" media="screen and (min-width: 960px)" />
 		<!-- Fallback content -->
-		<img src="img/logo-56x56.png" />
+		<img src="img/logo-1x.png" />
 	</picture>
     <p class="text">This site is © Adaptive Design Studio 2012 and all our work is  licensed under <a href="#">MIT</a>. The typeface used is <a href="#">FF Dagny</a>, served via Typekit and icons is <a href="http://pictos.cc/">Pictos</a> served via Pictos Server. Javascript powered by <a href="#">jQuery</a> and CSS by <a href="#">LESS</a>.</p>
 </footer>
