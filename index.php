@@ -130,15 +130,15 @@ to the users need.">
         </div>
     </div>
     <div id="responsive-images-polyfill" class="works">
-    	<h3><a href="/responsiveimagespolyfill/">Responsive Images Polyfill</a></h3>
-		<a href="/responsiveimagespolyfill/"><picture class="picture">
-			<source src="img/adaptive-grid-system-4x6.png" />
-			<source src="img/adaptive-grid-system-6x6.png" media="screen and (min-width: 480px)" />
-			<source src="img/adaptive-grid-system-4x11.png" media="screen and (min-width: 720px)" />
-			<source src="img/adaptive-grid-system-5x9.png" media="screen and (min-width: 960px)" />
-			<source src="img/adaptive-grid-system-6x9.png" media="screen and (min-width: 1120px)" />
+    	<h3><a href="responsiveimagepolyfill/">Responsive Images Polyfill</a></h3>
+		<a href="responsiveimagespolyfill/"><picture class="picture">
+			<source src="http://placehold.it/296x144/000000/E84C38" />
+			<source src="http://placehold.it/456x144/000000/E84C38" media="screen and (min-width: 480px)" />
+			<source src="http://placehold.it/296x264/000000/E84C38" media="screen and (min-width: 720px)" />
+			<source src="http://placehold.it/376x216/000000/E84C38" media="screen and (min-width: 960px)" />
+			<source src="http://placehold.it/456x216/000000/E84C38" media="screen and (min-width: 1120px)" />
 			<!-- Fallback -->
-			<img src="img/adaptive-grid-system-4x6.png" />
+			<img src="http://placehold.it/296x144/000000/E84C38" />
 		</picture></a>
         <div class="text">
             <p><span class="highlighted">How do we handle images i responsive webdesign?</span> This is a question attracting <a href="https://github.com/filamentgroup/Responsive-Images" target="blank">lots</a> and <a href="http://adaptive-images.com/" target="_blank">lots</a> of attention. There <a href="http://www.alistapart.com/articles/responsive-images-how-they-almost-worked-and-what-we-need/" target="_blank">aren't any really good solutions</a> so far. So what do we do?</p>
