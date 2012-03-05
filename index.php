@@ -27,7 +27,7 @@ to the users need.">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 	
 	<!-- Don't forget to set site up: http://google.com/webmasters -->
-	<meta name="google-site-verification" content="">
+	<meta name="google-site-verification" content="4PggMzOOlaKfHs8TFgRPXSCLZjFFqntQRjY_2L9UQjk">
 
 	<!-- Dublin Core Metadata : http://dublincore.org/ -->
 	<meta name="DC.title" content="Adaptive Design Studio">
