@@ -142,7 +142,7 @@ to the users need.">
 		</picture></a>
         <div class="text">
             <p><span class="highlighted">How do we handle images i responsive webdesign?</span> This is a question attracting <a href="https://github.com/filamentgroup/Responsive-Images" target="blank">lots</a> and <a href="http://adaptive-images.com/" target="_blank">lots</a> of attention. There <a href="http://www.alistapart.com/articles/responsive-images-how-they-almost-worked-and-what-we-need/" target="_blank">aren't any really good solutions</a> so far. So what do we do?</p>
-            <p>Html5 to the rescue - or is it so. The new <a href="http://dev.w3.org/html5/spec/Overview.html#the-video-element" target="_blank">video tag</a> in html5 have options for editing the src based on media-queries. The old <a href="http://www.w3.org/TR/html401/struct/objects.html#h-13.2" target="_blank">img tag</a> can't handle media queries, so a <a href="http://www.w3.org/community/respimg/" target="_blank">proposal for a new picture tag</a> has been made. Let's embrace that request. <a href="/responsiveimagespolyfill/">Responsive Images Polyfill</a> is a javascript polyfill making responsive images possible using the picture tag.</p>
+            <p>Html5 to the rescue - or is it so. The new <a href="http://dev.w3.org/html5/spec/Overview.html#the-video-element" target="_blank">video tag</a> in html5 have options for editing the src based on media-queries. The old <a href="http://www.w3.org/TR/html401/struct/objects.html#h-13.2" target="_blank">img tag</a> can't handle media queries, so a <a href="http://www.w3.org/community/respimg/" target="_blank">proposal for a new picture tag</a> has been made. Let's embrace that request. <a href="responsiveimagespolyfill/">Responsive Images Polyfill</a> is a javascript polyfill making responsive images possible using the picture tag.</p>
         </div>
     </div>
 </article>
@@ -226,7 +226,7 @@ to the users need.">
 		<!-- Fallback content -->
 		<img src="img/logo-1x.png" />
 	</picture>
-    <p class="text">This site is © Adaptive Design Studio 2012 and all our work is  licensed under <a href="#">MIT</a>. The typeface used is <a href="#">FF Dagny</a>, served via Typekit and icons is <a href="http://pictos.cc/">Pictos</a> served via Pictos Server. Javascript powered by <a href="#">jQuery</a> and CSS by <a href="#">LESS</a>.</p>
+    <p class="text">This site is © Adaptive Design Studio 2012. The site is constructed with <a href="http://html5please.com/" target="_blank">html5</a> and <a href="http://css3please.com/" target="_blank">css3</a> build on <a href="http://html5boilerplate.com/" target="_blank">html5boilerplate</a> and using <a href="http://www.modernizr.com/" target="_blank">Modernizr</a> as feature detection. The typeface used is <a href="https://typekit.com/fonts/ff-dagny-web-pro" target="_blank">FF Dagny</a>, served via Typekit and icons is <a href="http://pictos.cc/" target="_blank">Pictos</a> served via Pictos Server. Javascript powered by <a href="http://jquery.com/" target="_blank">jQuery</a> and CSS by <a href="http://lesscss.org/" target="_blank">LESS</a>.</p>
 </footer>
 
 </div>
