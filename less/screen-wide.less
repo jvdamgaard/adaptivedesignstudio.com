@@ -1,5 +1,95 @@
 /* 	Screen Wide
 	1840px and above
 	23 cols */
-@media screen and (min-width: 1840px) {
+@media screen and (min-width: 1840px) {	
+	h1 {.h0; font-weight: 700;}
+	.screen-wide-clear {
+		.clearfix();
+	}
+	header { 
+		#firm-description {
+			.cols-outer(19);
+			h1 {
+				.cols(8);
+			}
+			p {
+				.cols(10);
+				.cols-right(1);
+				.h2;
+				text-align: center;
+				line-height: 3*@gutter;
+			}
+		}
+	}
+	#adaptive-design {
+		#adaptive-design-description {
+			margin-top: 2*@gutter;
+		}
+	}
+	#cases {
+		.cols-outer(9);
+		.cols-outer-right(2);
+		
+		.case {
+			.cols-outer(4);
+			&:nth-child(odd) {
+				.cols-outer-left(1);
+			}
+		}
+		#load-more {
+			.cols(4);
+			.cols-left(5);
+			margin-top: @gutter;
+		}
+	}
+	#work {
+		.cols-outer(12);
+		.works {
+			h3, .text {
+				.cols(7);
+				float: right;
+			}
+		}
+	}
+	#about {
+		.cols-outer(9);
+		.cols-outer-right(2);
+		
+		.profile {
+			.cols-outer(4);
+			&:nth-child(odd) {
+				.cols-outer-left(1);
+			}
+			h3, h4, p {
+				.cols(4);
+			}
+			.btn {
+				.cols(1);
+			}
+		}
+	}
+	#contact {
+		.cols-outer(12);
+		#tagline {
+			.cols(12);
+		}
+		#hire-us {
+			.cols-outer(12);
+			h3, p {
+				.cols(8);
+			}
+			#contact-get-started {
+				.cols(4);
+				margin-top: 1*@gutter;
+			}
+		}
+		#follow, #email, #location {
+			.cols(4);
+		}
+	}
+	footer {
+		#logo, .text {
+			.cols-left(5);
+		}
+	}
 }

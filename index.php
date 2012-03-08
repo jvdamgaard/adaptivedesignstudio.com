@@ -66,6 +66,7 @@ to the users need.">
 		<source src="img/adaptive-design-figure-5x4.png" media="screen and (min-width: 720px)" />
 		<source src="img/adaptive-design-figure-8x5.png" media="screen and (min-width: 960px)" />
 		<source src="img/adaptive-design-figure-10x7.png" media="screen and (min-width: 1120px)" />
+		<source src="img/adaptive-design-figure-18x12.png" media="screen and (min-width: 1840px)" />
 		<!-- Fallback content -->
 		<img src="img/adaptive-design-figure-4x3.png" />
 	</picture>
@@ -74,10 +75,40 @@ to the users need.">
     <a href="#get-started" id="get-started" class="btn iconic bars_alt">Get started</a>
 </div>
 
+<div class="screen-wide-clear"></div>
+
 <article id="cases">
     <div class="bordered">
         <h2>Cases</h2>
     </div>
+    <a href="http://psykologviskum.dk" target="_blank" class="case">
+    	<picture class="picture" id="psykologviskum">
+			<source src="img/cases/psykologviskum-4x8.jpg" />
+			<source src="img/cases/psykologviskum-3x8.jpg" media="screen and (min-width: 480px)" />
+			<source src="img/cases/psykologviskum-4x8.jpg" media="screen and (min-width: 720px)" />
+			<!-- Fallback content -->
+			<img src="img/cases/psykologviskum-4x8.jpg" />
+		</picture>
+    	Psykolog Birgitte Viskum
+	</a>
+    <a href="http://metteomaibom.dk" target="_blank" class="case">
+    	<picture class="picture" id="metteomaibom">
+			<source src="img/cases/metteomaibom-4x8.jpg" />
+			<source src="img/cases/metteomaibom-3x8.jpg" media="screen and (min-width: 480px)" />
+			<source src="img/cases/metteomaibom-4x8.jpg" media="screen and (min-width: 720px)" />
+			<!-- Fallback content -->
+			<img src="img/cases/metteomaibom-4x8.jpg" />
+		</picture>
+		Mette O. Maibom</a>
+	<a href="http://malereskildsen.dk" target="_blank" class="case">
+	    <picture class="picture" id="malereskildsen">
+			<source src="img/cases/malereskildsen-4x8.jpg" />
+			<source src="img/cases/malereskildsen-3x8.jpg" media="screen and (min-width: 480px)" />
+			<source src="img/cases/malereskildsen-4x8.jpg" media="screen and (min-width: 720px)" />
+			<!-- Fallback content -->
+			<img src="img/cases/malereskildsen-4x8.jpg" />
+		</picture>
+		Mette O. Maibom</a>
     <a href="http://psykologviskum.dk" target="_blank" class="case">
     	<picture class="picture" id="psykologviskum">
 			<source src="img/cases/psykologviskum-4x8.jpg" />
@@ -115,12 +146,13 @@ to the users need.">
     </div>
     <div id="adaptive-design-grid" class="works">
     	<h3><a href="/adaptivegridsystem/">Adaptive Design Grid</a></h3>
-		<a href="/adaptivegridsystem/"><picture class="picture">
+		<a href="/adaptivegridsystem/" class="picture"><picture>
 			<source src="img/adaptive-grid-system-4x6.png" />
 			<source src="img/adaptive-grid-system-6x6.png" media="screen and (min-width: 480px)" />
 			<source src="img/adaptive-grid-system-4x11.png" media="screen and (min-width: 720px)" />
 			<source src="img/adaptive-grid-system-5x9.png" media="screen and (min-width: 960px)" />
 			<source src="img/adaptive-grid-system-6x9.png" media="screen and (min-width: 1120px)" />
+			<source src="img/adaptive-grid-system-5x9.png" media="screen and (min-width: 1840px)" />
 			<!-- Fallback -->
 			<img src="img/adaptive-grid-system-4x6.png" />
 		</picture></a>
@@ -131,12 +163,13 @@ to the users need.">
     </div>
     <div id="responsive-images-polyfill" class="works">
     	<h3><a href="responsiveimagepolyfill/">Responsive Images Polyfill</a></h3>
-		<a href="responsiveimagespolyfill/"><picture class="picture">
+		<a href="responsiveimagespolyfill/" class="picture"><picture>
 			<source src="http://placehold.it/296x144/000000/E84C38" />
 			<source src="http://placehold.it/456x144/000000/E84C38" media="screen and (min-width: 480px)" />
 			<source src="http://placehold.it/296x264/000000/E84C38" media="screen and (min-width: 720px)" />
 			<source src="http://placehold.it/376x216/000000/E84C38" media="screen and (min-width: 960px)" />
 			<source src="http://placehold.it/456x216/000000/E84C38" media="screen and (min-width: 1120px)" />
+			<source src="http://placehold.it/376x216/000000/E84C38" media="screen and (min-width: 1840px)" />
 			<!-- Fallback -->
 			<img src="http://placehold.it/296x144/000000/E84C38" />
 		</picture></a>
@@ -146,6 +179,8 @@ to the users need.">
         </div>
     </div>
 </article>
+
+<div class="screen-wide-clear"></div>
 
 <article id="about">
     <div class="bordered">
@@ -159,6 +194,7 @@ to the users need.">
 			<source src="img/logo-black-4x8.png" media="screen and (min-width: 480px)" />
 			<source src="img/logo-black-3x8.png" media="screen and (min-width: 720px)" />
 			<source src="img/logo-black-6x14.png" media="screen and (min-width: 960px)" />
+			<source src="img/logo-black-3x8.png" media="screen and (min-width: 1840px)" />
 			<!-- Fallback content -->
 			<img src="img/logo-black-3x8.png" />
 		</picture>
@@ -177,6 +213,7 @@ to the users need.">
 			<source src="img/jvd-4x8.jpg" media="screen and (min-width: 480px)" />
 			<source src="img/jvd-3x8.jpg" media="screen and (min-width: 720px)" />
 			<source src="img/jvd-6x14.jpg" media="screen and (min-width: 960px)" />
+			<source src="img/jvd-3x8.jpg" media="screen and (min-width: 1840px)" />
 			<!-- Fallback content -->
 			<img src="img/jvd-3x8.jpg" />
 		</picture>
@@ -216,6 +253,8 @@ to the users need.">
 		Denmark</p>
     </div>
 </article>
+
+<div class="screen-wide-clear"></div>
 
 <footer>
 	<picture id="logo">
