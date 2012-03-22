@@ -45,22 +45,22 @@
 		}
 	}
 	header {
+		//background: @color-1;
 		margin-top: 0px !important;
 		#firm-description {
 			margin-bottom: @gutter;
 		}
 		a {
-			.cols;
+			.google-btn(@color-font,@color-background);
+			.cols(1);
 			.gutters-height(3);
-			.small;
-			display: block;
+			.small();
 			position: relative;
 			padding-top: 2*@gutter;
-			line-height: @gutter;
-			font-weight: 700;
-			text-align: center;
-			text-decoration: none;
-			outline: 0;
+			&:hover {
+				.gradient(darken(@color,0%), darken(@color,4%));
+				border: 1px solid darken(@color,15%);
+			}
 			&:before {
 				.pictos();
 				display: block;
@@ -81,10 +81,6 @@
 			}
 			&.contact:before {
 				content: 'h';
-			}
-			&:hover {
-				color: @color-2;
-				.text-shadow(0px,1px,1px,0px,rgba(0,0,0,0.2));
 			}
 		}
 	}

@@ -1,69 +1,71 @@
-/*	Adaptive Images Polyfill v0.2.1
-	- created by Adaptive Design Studio adaptivedesignstudio.com
-	- follow project on adaptivedesignstudio.com/adaptiveimages
-	- based on syntax from w3.org/community/respimg */
+/*jslint	browser: true */
+/*global	jQuery, 
+			Modernizr */
+
+// Handle responsive images
+function RespImg($) {
+	var	testText = "",
+		width = $(window).width();
 	
-(function (win, docEl) {
+	testText += "Document width: " + width + "<br /><br />";
 	
-	// add window event
-	function addWinEvent(type, fn) {
-		if (win.addEventListener) addEventListener(type, fn, false); else attachEvent('on' + type, fn);
-	}
-	
-	// resizer
-	function onResize() {
-		var testText = "";
-		var width = docEl.clientWidth;
-		testText += "Width: " + width + "<br />";
+	// Loop through all picture tags
+	$('picture').each(function() {
+		var	src = null,
+			image = $(this).find('img');
 		
-		// Loop through all picture tags
-		var pictures = document.getElementsByTagName('picture');
-		testText += pictures.length + " pictures found<br />"; 
-		for (var i=0; i < pictures.length; i++) {
-			var src = undefined;
-						
-			// Loop through all source tags inside picture tag
-			var sources = pictures[i].getElementsByTagName('source');
-			testText += sources.length + " sources found<br />"; 
-			for (var j=0; j < sources.length; j++) {
-				
-				 // Has src attribute been set
-				var mediasrc = sources[j].src;
-				if (mediasrc != undefined) {
-					var media = sources[j].getAttribute('media');
-					testText += media + ": " + mediasrc;
+		testText += '&lt;picture&gt;<br />';
 					
-					// Source without any media-quereis
-					if (media == undefined || Modernizr.mq(media)) {
-						src = mediasrc;
-						testText += " - Passed";
-					} else {
-						testText += " - Failed";
-					}
-					testText += "<br />";
-				}
-			}
+		// Loop through all source tags inside picture tag 
+		$(this).find('source').each(function() {
 			
-			// If some source has been set, then change src of img
-			if (src != undefined) {
-				testText += "Final src: " + src + "<br />";
-				var images = pictures[i].getElementsByTagName('img');
-				if (images[0]) {
-					testText += "Img tags src set<br />";
-					// images[0].src = src;
+			// Has src attribute been set
+			var mediasrc = $(this).attr('src');
+			if (mediasrc) {
+				var media = $(this).attr('media');
+				
+				// Source without any media-quereis
+				if (!media || Modernizr.mq(media)) {
+					src = mediasrc;
+					testText += '<span style="color:green" class="passed">';
 				} else {
-					// TO-DO: make new img tag inside picture tag with new src
+					testText += '<span style="color:red" class="failed">';
 				}
+				testText += "&lt;source src=&quot;"+mediasrc+"&quot;";
+				if (media) {
+					testText += " media=&quot;"+media+"&quot;";
+				} 
+				testText += " /&gt;</span><br />";
 			}
+		});
+		testText += "<span>&lt;!-- Fallback --&gt;</span><br />";
+		
+		// create image tag if it doesn't exist
+		if (!image) {
+			// TO-DO: create image
 		}
-		$("#test").html(testText);
-	}
+		
+		// Set new source of fallback image
+		if (src) {
+			image.attr('src',src);
+			image.removeAttr('style');
+			testText += '<span style="color:green">&lt;img src=&quot;'+src+'&quot; /&gt;</span><br />';	
+		} else {
+			testText += '<span style="color:red">&lt;img src=&quot;http://placehold.it/320x100&quot; /&gt;</span><br />';
+			image.attr('style', 'width:100%');
+		}
+		
+		testText += '&lt;/picture&gt;<br /><br />';
+	});
+	document.getElementById("test").innerHTML = testText;
+}
 	
+// start adaptive images polyfill when script has loaded
+jQuery(document).ready(function($) {
+	RespImg($);
 	// activate adaptive images polyfill on resize and orientation change
-	addWinEvent('resize', onResize);
-	addWinEvent('orientationchange', onResize);
-	
-	// start adaptive images polyfill when script has loaded
-	onResize();
-	
-}(this, document.documentElement));
+	$(window).resize(function() {
+		RespImg($);
+	});
+});
+
