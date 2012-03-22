@@ -34,11 +34,11 @@ to the users need.">
 	<meta name="DC.subject" content="Design websites for all medias.">
 	<meta name="DC.creator" content="Jakob Viskum Damgaard from Adaptive Design Studio.">
 
-    <!-- Modernizr: feature detects -->
-    <script src="lib/js/modernizr.min.js"></script>
-
     <!-- Use Typekit for fonts -->
     <script>TypekitConfig={kitId:"pdf1koa",scriptTimeout:3000};(function(){var d=document.getElementsByTagName("html")[0];d.className+=" wf-loading";var b=setTimeout(function(){d.className=d.className.replace(/(\s|^)wf-loading(\s|$)/g,"");d.className+=" wf-inactive"},TypekitConfig.scriptTimeout);var a=document.createElement("script");a.src="//use.typekit.com/"+TypekitConfig.kitId+".js";a.type="text/javascript";a.async="true";a.onload=a.onreadystatechange=function(){var f=this.readyState;if(f&&f!="complete"&&f!="loaded"){return}clearTimeout(b);try{Typekit.load(TypekitConfig)}catch(g){}};var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c)})();</script>
+
+    <!-- Modernizr: enables HTML5 elements & feature detects -->
+    <script src="lib/js/modernizr.min.js"></script>
     
 </head>
 
@@ -108,16 +108,16 @@ to the users need.">
 			<!-- Fallback content -->
 			<img src="img/cases/malereskildsen-4x8.jpg" />
 		</picture>
-		Malerfirmaet Eskildsen</a>
-    <a href="http://aarhus12.jboye.com" target="_blank" class="case">
-    	<picture class="picture" id="jboye-conferences">
-			<source src="img/cases/jboye-conferences-4x8.jpg" />
-			<source src="img/cases/jboye-conferences-3x8.jpg" media="screen and (min-width: 480px)" />
-			<source src="img/cases/jboye-conferences-4x8.jpg" media="screen and (min-width: 720px)" />
+		Mette O. Maibom</a>
+    <a href="http://psykologviskum.dk" target="_blank" class="case">
+    	<picture class="picture" id="psykologviskum">
+			<source src="img/cases/psykologviskum-4x8.jpg" />
+			<source src="img/cases/psykologviskum-3x8.jpg" media="screen and (min-width: 480px)" />
+			<source src="img/cases/psykologviskum-4x8.jpg" media="screen and (min-width: 720px)" />
 			<!-- Fallback content -->
-			<img src="img/cases/jboye-conferences-4x8.jpg" />
+			<img src="img/cases/psykologviskum-4x8.jpg" />
 		</picture>
-    	J. Boye Conferences
+    	Psykolog Birgitte Viskum
 	</a>
     <a href="http://metteomaibom.dk" target="_blank" class="case">
     	<picture class="picture" id="metteomaibom">
@@ -163,7 +163,7 @@ to the users need.">
     </div>
     <div id="responsive-images-polyfill" class="works">
     	<h3><a href="responsiveimagepolyfill/">Responsive Images Polyfill</a></h3>
-		<a href="responsiveimagepolyfill/" class="picture"><picture>
+		<a href="responsiveimagespolyfill/" class="picture"><picture>
 			<source src="http://placehold.it/296x144/000000/E84C38" />
 			<source src="http://placehold.it/456x144/000000/E84C38" media="screen and (min-width: 480px)" />
 			<source src="http://placehold.it/296x264/000000/E84C38" media="screen and (min-width: 720px)" />
@@ -175,7 +175,7 @@ to the users need.">
 		</picture></a>
         <div class="text">
             <p><span class="highlighted">How do we handle images i responsive webdesign?</span> This is a question attracting <a href="https://github.com/filamentgroup/Responsive-Images" target="blank">lots</a> and <a href="http://adaptive-images.com/" target="_blank">lots</a> of attention. There <a href="http://www.alistapart.com/articles/responsive-images-how-they-almost-worked-and-what-we-need/" target="_blank">aren't any really good solutions</a> so far. So what do we do?</p>
-            <p>Html5 to the rescue - or is it so. The new <a href="http://dev.w3.org/html5/spec/Overview.html#the-video-element" target="_blank">video tag</a> in html5 have options for editing the src based on media-queries. The old <a href="http://www.w3.org/TR/html401/struct/objects.html#h-13.2" target="_blank">img tag</a> can't handle media queries, so a <a href="http://www.w3.org/community/respimg/" target="_blank">proposal for a new picture tag</a> has been made. Let's embrace that request. <a href="responsiveimagepolyfill/">Responsive Images Polyfill</a> is a javascript polyfill making responsive images possible using the picture tag.</p>
+            <p>Html5 to the rescue - or is it so. The new <a href="http://dev.w3.org/html5/spec/Overview.html#the-video-element" target="_blank">video tag</a> in html5 have options for editing the src based on media-queries. The old <a href="http://www.w3.org/TR/html401/struct/objects.html#h-13.2" target="_blank">img tag</a> can't handle media queries, so a <a href="http://www.w3.org/community/respimg/" target="_blank">proposal for a new picture tag</a> has been made. Let's embrace that request. <a href="responsiveimagespolyfill/">Responsive Images Polyfill</a> is a javascript polyfill making responsive images possible using the picture tag.</p>
         </div>
     </div>
 </article>
@@ -270,22 +270,21 @@ to the users need.">
 
 </div>
 
+<!-- Async load -->
 <script>
-	window._gaq = [['_setAccount','UA-29383798-1'],['_trackPageview'],['_trackPageLoadTime']]; // set google analytics id
-	// async javascript load
+	window._gaq = [['_setAccount','UA-29383798-1'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({ load: [  
-		"//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", // jQuery svn
-		"lib/js/adaptiveimages.polyfill.min.js", // responsive images polyfill
-		//"js/functions.js", // site specific javascript
-		('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js' // google analytics
+		"lib/js/adaptiveimages.polyfill.min.js", 
+		"//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
+		//"js/functions.js",
+		('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
 	] });
 </script>
 
-<!-- development -->
+<!-- Display grid under development -->
 <script>
     Modernizr.load({ load: [  
-		//"lib/js/grid.min.js", // display grid
-		"lib/js/cssrefresh.min.js" // refresh css without reload
+		"lib/js/grid.min.js"
 	] });
 </script><!-- -->
 	

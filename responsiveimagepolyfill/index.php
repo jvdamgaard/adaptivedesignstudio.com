@@ -33,11 +33,11 @@
 	<meta name="DC.subject" content="Subject">
 	<meta name="DC.creator" content="Jakob Viskum Damgaard from Adaptive Design Studio.">
 
-    <!-- Modernizr: enables HTML5 elements & feature detects -->
-    <script src="../lib/js/modernizr.min.js"></script>
-
     <!-- Use Typekit for fonts -->
     <script>TypekitConfig={kitId:"pdf1koa",scriptTimeout:3000};(function(){var d=document.getElementsByTagName("html")[0];d.className+=" wf-loading";var b=setTimeout(function(){d.className=d.className.replace(/(\s|^)wf-loading(\s|$)/g,"");d.className+=" wf-inactive"},TypekitConfig.scriptTimeout);var a=document.createElement("script");a.src="//use.typekit.com/"+TypekitConfig.kitId+".js";a.type="text/javascript";a.async="true";a.onload=a.onreadystatechange=function(){var f=this.readyState;if(f&&f!="complete"&&f!="loaded"){return}clearTimeout(b);try{Typekit.load(TypekitConfig)}catch(g){}};var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c)})();</script>
+
+    <!-- Modernizr: enables HTML5 elements & feature detects -->
+    <script src="../lib/js/modernizr.min.js"></script>
     
 </head>
 
@@ -45,15 +45,15 @@
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div class="wrapper">
 
-	<picture>
-		<source src="http://placehold.it/320x100" />
-		<source src="http://placehold.it/480x100" media="screen and (min-width: 480px)" />
-		<source src="http://placehold.it/720x100" media="screen and (min-width: 720px)" />
-		<source src="http://placehold.it/960x100" media="screen and (min-width: 960px)" />
-		<source src="http://placehold.it/1120x100" media="screen and (min-width: 1120px)" />
-		<source src="http://placehold.it/1840x100" media="screen and (min-width: 1840px)" />
+	<picture class="picture">
+		<source src="http://placehold.it/320x100/000000/E84C38" />
+		<source src="http://placehold.it/480x100/000000/E84C38" media="screen and (min-width: 480px)" />
+		<source src="http://placehold.it/720x100/000000/E84C38" media="screen and (min-width: 720px)" />
+		<source src="http://placehold.it/960x100/000000/E84C38" media="screen and (min-width: 960px)" />
+		<source src="http://placehold.it/1120x100/000000/E84C38" media="screen and (min-width: 1120px)" />
+		<source src="http://placehold.it/1840x100/000000/E84C38" media="screen and (min-width: 1840px)" />
 		<!-- Fallback -->
-		<img src="http://placehold.it/320x100" />
+		<img src="http://placehold.it/320x100/000000/E84C38" />
 	</picture>
 	
 	<div id="test"></div>
@@ -64,7 +64,7 @@
 <script>
 	window._gaq = [['_setAccount','UA-29383798-1'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({ load: [
-		//"../lib/js/adaptiveimages.polyfill.min.js",   
+		"../lib/js/adaptiveimages.polyfill.min.js",   
 		"//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
 		"js/functions.js",
 		('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
